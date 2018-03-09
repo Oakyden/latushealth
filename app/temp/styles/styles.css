@@ -469,9 +469,87 @@ a {
   color: #d59541;
 }
 
+.menuButton{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  right: 5%;
+  top: 7%;
+  padding-top: 7px;
+  position: fixed;
+  -webkit-box-shadow: 0 10px 30px rgba(0,0,0,.74);
+          box-shadow: 0 10px 30px rgba(0,0,0,.74);
+}
+
+#navLogo{
+  display: block;
+  margin: 0 auto;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    -webkit-transition: 1s;
+    transition: 1s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#logoPlaceholder{
+  color: #fff;
+  display: block;
+  padding-top: 7vh;
+  padding-left: 7vw;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 800px) {
+
+#logoPlaceholder{
+    font-size: 2rem
+}
+  }
+
 .large-hero {
   border-bottom: 10px solid #2f5572;
   position: relative;
+  background-color: #2877ff;
 
 }
 
@@ -480,11 +558,7 @@ a {
   }
 
 .large-hero__text-content {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 0;
+  height: 90vh;
     width: 100%;
     text-align: center;
   }
@@ -492,7 +566,7 @@ a {
 .large-hero__title {
     font-weight: 300;
     color: #2f5572;
-    margin: 0;
+    margin-top: 10%;
     font-size: 2.4rem;
 
   }

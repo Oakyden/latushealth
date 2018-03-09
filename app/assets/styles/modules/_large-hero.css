@@ -1,16 +1,27 @@
+#logoPlaceholder{
+  color: #fff;
+  display: block;
+  padding-top: 7vh;
+  padding-left: 7vw;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  @mixin atMedium{
+    font-size: 2rem;
+  }
+}
+
 .large-hero {
   border-bottom: 10px solid $mainBlue;
   position: relative;
+  background-color: #2877ff;
 
   &__image {
     display: block;
   }
 
   &__text-content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
+  height: 90vh;
     width: 100%;
     text-align: center;
   }
@@ -18,9 +29,9 @@
   &__title {
     font-weight: 300;
     color: $mainBlue;
-    margin: 0;
+    margin-top: 10%;
     font-size: 2.4rem;
-  
+
     @mixin atSmall {
       font-size: 4.8rem;
     }
