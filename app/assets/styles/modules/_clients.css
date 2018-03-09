@@ -1,103 +1,50 @@
-#rig {
-    max-width:900px;
-    margin:0 auto; /*center aligned*/
-    padding:0;
-    font-size:0; /* Remember to change it back to normal font size if have captions */
-    list-style:none;
-    background-color:#000;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding-top: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
-#rig li {
-    display: inline-block;
-    *display:inline;/*for IE6 - IE7*/
-    width:25%;
-    vertical-align:middle;
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
-/* The wrapper for each item */
-.rig-cell {
-    /*margin:12px;
-    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
-    display:block;
-    position: relative;
-    overflow:hidden;
+img.grayscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
-/* If have the image layer */
-.rig-img {
-    display:block;
-    width: 100%;
-    height: auto;
-    border:none;
-    transform:scale(1);
-    transition:all 1s;
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
 }
 
-#rig li:hover .rig-img {
-    transform:scale(1.05);
-}
+.clients{
 
-/* If have the overlay layer */
-.rig-overlay {
-    position: absolute;
-    display:block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
-    background-size:50px 50px;
-    opacity:0;
-    filter:alpha(opacity=0);/*For IE6 - IE8*/
-    transition:all 0.6s;
-}
-#rig li:hover .rig-overlay {
-    opacity:0.8;
-}
 
-/* If have captions */
-.rig-text {
-    display:block;
-    padding:0 30px;
-    box-sizing:border-box;
-    position:absolute;
-    left:0;
-    width:100%;
-    text-align:center;
-    text-transform:capitalize;
-    font-size:18px;
-    font-weight:bold;
-    font-family: 'Oswald', sans-serif;
-    font-weight:normal!important;
-    top:40%;
-    color:white;
-    opacity:0;
-    filter:alpha(opacity=0);/*For older IE*/
-    transform:translateY(-20px);
-    transition:all .3s;
-}
-#rig li:hover .rig-text {
-    transform:translateY(0px);
-    opacity:0.9;
-}
 
-@media (max-width: 9000px) {
-    #rig li {
-        width:25%;
-    }
-}
+  &__text-content{
+    padding-top: 5rem;
+    color: rgb(78, 78, 78);
+    opacity: 0.6;
+  }
 
-@media (max-width: 700px) {
-    #rig li {
-        width:33.33%;
-    }
-}
+  &__description{
 
-@media (max-width: 550px) {
-    #rig li {
-        width:50%;
-    }
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  &__subtitle{
+  
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 3rem;
+  }
+
+
 }

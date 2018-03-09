@@ -1,0 +1,70 @@
+.beginningImgWrapper{
+  width: 50vw;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.beginningImgWrapper img{
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,.74);
+
+}
+
+
+.our-beginning {
+  position: relative;
+  background-color: #dce7fb;
+  height: 60vh;
+
+  &__inner {
+    position: relative;
+    background-color: $innerBackground;
+    height: 65vh;
+    margin-top: 1.5rem;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__text-content {
+    width: 70%;
+    font-family: 'Josefin Sans', sans-serif;
+    float: right;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    color: #255cc6;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-right: 5%;
+    padding-top: 10%;
+    z-index: 3;
+    text-align: right;
+
+    @mixin atSmall {
+      font-size: 2.5rem;
+    }
+
+  }
+
+  &__description {
+    color: #757575;
+    font-size: 1rem;
+    font-weight: 300;
+    position: relative;
+    width:65%;
+    float: right;
+    padding-right: 4rem;
+    padding-top: 3%;
+
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
+  }
+
+}
