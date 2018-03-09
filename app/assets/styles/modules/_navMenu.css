@@ -9,6 +9,7 @@
   padding-top: 7px;
   position: fixed;
   box-shadow: 0 10px 30px rgba(0,0,0,.74);
+  z-index: 2;
 }
 
 #navLogo{
@@ -22,7 +23,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 6;
     top: 0;
     left: 0;
     background-color: #fff;
