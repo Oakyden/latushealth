@@ -27,28 +27,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <a href="#">Contact</a>
   </div>
 
-  <div class="large-hero">
-      <div class="menuButton">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      </div>
+  <div class="menuButton">
+    <span onclick="openNav()">&#9776;</span>
+  </div>
 
-  <img  class="website-logo" src="assets/images/logos/latuslogo.png">
+  <div class="large-hero">
+    <div class="large-hero__translucent">
+
+      <img  class="website-logo" src="assets/images/logos/latuslogo.png">
 
       <div class="headerImgWrapper animated fadeInLeft">
-        <img alt="hero image" src="assets/images/officeworker.jpg">
+        <img class="large-hero__image" alt="hero image" src="assets/images/officeworker.jpg">
       </div>
 
       <div class="large-hero__text-content">
-        <h1 class="large-hero__title animated fadeInLeft">Latus Health</h1>
-        <h2 class="large-hero__subtitle animated rotateInDownLeft">Occupational Health</h2>
-        <p class="large-hero__description animated fadeInRight">Helping you improve the health of every employee.</p>
+        <img class="large-hero__title animated fadeInLeft" alt="latus logo" src="assets/images/logos/latuslogo.png">
+        <span class="large-hero__backing-text">Latus Health</span>
+        <p class="large-hero__description animated fadeInRight">Helping you improve the health of every employee</p>
       </div>
+    </div>
   </div>
 
-  <div id="testimonials" class="wrapper">
+  <div class="wrapper">
 
     <div class="clients__text-content">
-        <h3 class="clients__subtitle">Occupational Health Done Differently</h3>
+        <h2 class="clients__subtitle">Occupational Health Done Differently</h2>
         <span class="clients__description">We work with companies to bring a modern and alternative approach to occupatinal health</span>
     </div>
 
@@ -68,23 +71,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
   <div id="our-beginning" class="page-section">
 
-    <div class="beginningImgWrapper animated fadeInLeft">
+    <div class="beginningImgWrapper">
       <img alt="our-beginning-img" src="assets/images/trainworker.jpg">
     </div>
 
       <div class="our-beginning__inner">
 
 
-
           <div class="our-beginning__text-content">
-            <h2 class="our-beginning__subtitle animated rotateInDownLeft">Passionate about helping businesses and their employees perform at their best</h2>
-            <p class="our-beginning__description animated fadeInRight">LATUS Health is a team of health and wellbeing experts passionate about helping businesses and their employees perform at their best.
-
-We provide industry-leading health and wellbeing support programmes to a wide range of local and national businesses from our headquarters in East Yorkshire.
-
-Our mission is to improve the performance of every company we work with as a direct result of us improving the mental and physical health of every employee.</p>
+            <h2 class="our-beginning__subtitle animated fadeInRight">Passionate about helping businesses and their employees perform at their best</h2>
+            <p class="our-beginning__description">LATUS Health is a team of health and wellbeing experts passionate about helping businesses and their employees perform at their best. We provide industry-leading health and wellbeing support programmes to a wide range of local and national businesses from our headquarters in East Yorkshire. <br><br>Our mission is to improve the performance of every company we work with as a direct result of us improving the mental and physical health of every employee.</p>
           </div>
-      </div>
+        </div>
 
   </div>
 
@@ -96,7 +94,7 @@ Our mission is to improve the performance of every company we work with as a dir
       </div>
 
       <div class="divsContainer">
-        
+
         <div class="div-one">
         </div>
 
@@ -116,6 +114,8 @@ Our mission is to improve the performance of every company we work with as a dir
   <footer>
     <p>Copyright &copy; 2018 Latus Health. All rights reserved. <a href="#" class="btn btn--orange">Get in Touch</a></p>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/scripts/navMenu.js"></script>
+  <script type="text/javascript" src="assets/scripts/large-hero.js"></script>
 </body>
 </html>
