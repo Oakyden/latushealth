@@ -3,6 +3,8 @@
   grid-template-columns: auto auto;
   padding-top: 4rem;
   font-family: 'Gotham', sans-serif;
+  width: 90%;
+  margin: 0 auto;
 
   @mixin atSmall {
       grid-template-columns: auto auto auto auto auto;
@@ -16,13 +18,26 @@
 }
 
 img.grayscale {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%); /* Chrome 19+ & Safari 6+ */
+  opacity: 0.6;
+
+  @mixin atSmall {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    opacity: 1;
+  }
 }
 
 img.grayscale:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);
+
+opacity: 0.6;
+
+  @mixin atSmall {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+  }
 }
 
 .clients{
@@ -32,6 +47,8 @@ img.grayscale:hover {
   &__text-content{
     padding-top: 5rem;
     color: rgb(78, 78, 78);
+    width: 90%;
+    margin: 0 auto;
   }
 
   &__description{

@@ -24,6 +24,7 @@
     box-shadow: 0 10px 30px rgba(0,0,0,.74);
     z-index: 99;
     font-size: 1.5rem;
+    cursor: pointer;
   }
 
 }
@@ -31,6 +32,8 @@
 #navLogo{
   display: block;
   margin: 0 auto;
+  width: 20%;
+  padding-bottom: 10%;
 }
 
 
@@ -45,17 +48,19 @@
     background-color: #fff;
     overflow-x: hidden;
     transition: 1s;
-    padding-top: 60px;
+    padding-top: 5%;
 }
 
 .sidenav a {
     text-align: center;
     padding: 8px 8px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 50px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: bold;
 }
 
 .sidenav a:hover {

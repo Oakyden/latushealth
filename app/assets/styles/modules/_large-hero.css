@@ -7,8 +7,11 @@ display: none;
     position: absolute;
     margin-top: 1rem;
     display: block;
+    -webkit-animation-duration: 2s;
+
   }
 }
+
 
 .headerImgWrapper img{
   max-width: 100%;
@@ -29,25 +32,14 @@ display: none;
   }
 }
 
-#logoPlaceholder{
-  color: #fff;
-  display: block;
-  padding-top: 7vh;
-  padding-left: 7vw;
-  font-weight: bold;
-  font-size: 1.5rem;
-
-  @mixin atMedium{
-    font-size: 2rem;
-  }
-}
 
 .large-hero {
   position: relative;
-  height: 95vh;
+  height: 90vh;
   clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
   background-image: url("http://localhost:3000/assets/images/officeworker.jpg");
   background-size: cover;
+  overflow: hidden;
 
   @mixin atSmall {
     background-image: url();
@@ -67,23 +59,24 @@ display: none;
   &__text-content {
     width: 90%;
     margin: 0 auto;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
   }
 
   &__title {
     font-weight: 300;
     color: #fff;
     font-size: 2.4rem;
-    padding-left: 15%;
+    padding-left: 5%;
     font-weight: bold;
     animation-duration: 6s;
     position: absolute;
+    max-width: 90%;
+    padding-top: 20%;
 
     @mixin atSmall {
       font-size: 4.8rem;
-        padding-top: 9%;
-        max-width: 40%;
         max-height: 300px;
+        padding-top: 10%;
     }
 
   }
@@ -105,32 +98,28 @@ display: none;
 
   &__description {
     color: #FFF;
-    font-size: 1.1rem;
-    font-weight: 300;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0,0.2);
+    font-size: 1.8rem;
     position: relative;
     z-index: 4;
-    padding-left: 10%;
-    padding-top: 70%;
+    padding-left: 5%;
+    padding-top: 50%;
     position: absolute;
+    max-width: 90%;
 
 
 
     @mixin atSmall {
       font-size: 2.5rem;
-      padding-top: 18%;
+      padding-top: 10%;
       font-weight: bold;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0,0.2);
 
     }
   }
 
   &__backing-text{
-    position: absolute;
-    font-size: 5rem;
-    font-weight: bold;
-    color: #fff;
-    opacity: 0.6;
-    padding-top: 20%;
+
+    display: none;
 
     @mixin atSmall{
     font-size: 7rem;
@@ -139,6 +128,7 @@ display: none;
     padding-top: 7%;
     padding-left: 5%;
     z-index: -1;
+    opacity: 0.6;
 
     }
   }
