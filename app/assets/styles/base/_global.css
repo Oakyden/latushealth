@@ -1,6 +1,6 @@
 body {
-  font-family: 'Roboto', sans-serif;
   color: #333;
+  font-family: 'Rubik', sans-serif;
 }
 
 img {
@@ -12,6 +12,14 @@ img {
   box-sizing: border-box;
 }
 
-a {
-  color: $mainOrange;
+.display-none{
+  display: none;
+}
+
+.menu-overlay{
+  height: 120vh;
+  width: 100vw;
+  background-color: rgba(255,255,255, 0.8);
+  position: absolute;
+  z-index: 5;
 }

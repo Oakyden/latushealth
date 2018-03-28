@@ -16,7 +16,7 @@ display: none;
 .headerImgWrapper img{
   max-width: 100%;
   max-height: 100%;
-  box-shadow: 0 10px 30px rgba(0,0,0,.74);
+  box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.1);
 }
 
 .website-logo{
@@ -37,7 +37,7 @@ display: none;
   position: relative;
   height: 90vh;
   clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
-  background-image: url("http://localhost:3000/assets/images/officeworker.jpg");
+  background-image: url("../../assets/images/officeworker.jpg");
   background-size: cover;
   overflow: hidden;
 
@@ -59,7 +59,6 @@ display: none;
   &__text-content {
     width: 90%;
     margin: 0 auto;
-    font-family: 'Hammersmith One', sans-serif;
   }
 
   &__title {

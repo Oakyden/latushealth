@@ -1,0 +1,41 @@
+#footer{
+  background-color: $mainBlue;
+  margin-top: 8%;
+  height: 250px;
+  width: 100%;
+
+  @mixin atSmall{
+      height: 400px;
+  }
+}
+
+#footer span{
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  margin-top: 4rem;
+
+  @mixin atSmall{
+    width: 20%;
+  }
+}
+
+#footer a{
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 3rem;
+  letter-spacing: -3px;
+  font-weight: bold;
+  color: #fff;
+
+  @mixin atSmall{
+  width: 20%;
+  font-size: 4rem;
+  }
+}

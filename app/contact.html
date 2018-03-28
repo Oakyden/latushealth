@@ -1,0 +1,95 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>Latus Health</title>
+  <meta name="keywords" content="Occpational Health, Health, Latus, Health">
+  <meta name="description" content="Providing a full spectrum of occupational health services">
+
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <link rel="stylesheet" href="temp/styles/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+<body>
+<div class="menu-overlay display-none"></div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="sidenav__item"><a href="#">Clients</a></div>
+    <div class="sidenav__item"><a href="#">About Us</a></div>
+    <div class="sidenav__item"><a href="#">Testimonials</a></div>
+    <div class="sidenav__item"><a href="#">Services</a></div>
+    <img id="navLogo" alt="latus logo" src="assets/images/logos/latus-mainblue.png">
+  </div>
+
+  <div class="menuButton">
+    <span onclick="openNav()">&#9776;</span>
+  </div>
+
+  <img  class="website-logo" src="assets/images/logos/latus-mainblue.png">
+
+  <h1 class="contact__title">We want to hear from you</h1>
+
+  <div id="contact" class="">
+
+    <div class="contact__container">
+      <div class="contact__overlay-one">
+        <div class="contact__links">
+          <a id="contact__contact-us" href="#">Contact Us</a><br>
+          <a id="contact__call-us" href="#">Call Us</a><br>
+          <a id="contact__find-us" href="#">Find us</a><br>
+          <a id="contact__social-media" href="#">Social Media</a><br>
+        </div>
+      </div>
+
+      <div class="contact__img-one">
+        <div id="contact__form-container" class="display-none">
+            <form class="contact__form" action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" class="contact__input-field" name="firstname" placeholder="Your name..">
+              <br>
+              <label for="lname">Last Name</label>
+              <input type="text" class="contact__input-field" name="lastname" placeholder="Your last name..">
+              <br>
+              <label for="subject">Subject</label>
+              <textarea class="contact__input-field" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+              <input id="contact__form-submit" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="contact__phone-container" class="display-none">
+          <div class="contact__phone-content">
+            <span>01482 640537</span><br>
+            <i class="fas fa-phone fa-7x"></i>
+          </div>
+        </div>
+
+        <div id="contact__social-container" class="display-none">
+          <div class="contact__social-content">
+            <a href="https://www.facebook.com/latustrainingltd/"><i class="fab fa-facebook-square fa-7x"></i><span>Facebook</span></a><br>
+            <a href="https://www.instagram.com/latustraining/"><i class="fab fa-instagram fa-7x"></i><span>Instagram</span></a><br>
+            <a href="https://www.linkedin.com/company/latus-health/"><i class="fab fa-linkedin fa-7x"></i><span>Linked In</span></a><br>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <footer>
+
+      <div id="footer" class="page-section">
+          <span>We'd love to hear from you.</span>
+          <div>
+            <a href="">Get in touch</a>
+          </div>
+      </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/scripts/navMenu.js"></script>
+  <script type="text/javascript" src="assets/scripts/contactHover.js"></script>
+</body>
+</html>

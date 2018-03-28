@@ -1,0 +1,147 @@
+#services{
+  height: 1000px;
+
+  @mixin atSmall{
+    height: 600px;
+  }
+
+}
+
+.services {
+  position: relative;
+  background-color: #dce7fb;
+  height: 60vh;
+
+
+  &__inner {
+    position: relative;
+    background-color: $innerBackground;
+    margin-top: 40%;
+    height: 600px;
+    margin: 0 auto;
+    height: 200px;
+
+    @mixin atSmall{
+    height: 50vh;
+    width: 100%;
+    }
+  }
+
+  &__image {
+    display: block;
+  }
+
+
+  &__subtitle {
+    font-weight: 700;
+    color: $mainBlue;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-top: 5%;
+    z-index: 3;
+    text-align: center;
+
+
+    @mixin atSmall {
+      font-size: 2rem;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+  }
+
+  &__hover-container{
+    width: 95%;
+    margin: 0 auto;
+
+    @mixin atSmall{
+      margin-top: 2%;
+      padding-left: 15%;
+    }
+  }
+
+  &__hover-box-container{
+    display: inline-block;
+  }
+
+  &__hover-box{
+    width: 16rem;
+    height: 16em;
+    background-color: white;
+    margin: 1.5rem;
+    box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+
+    @mixin atSmall{
+      width: 24rem;
+      height: 24em;
+
+    }
+  }
+
+  &__hover-box2{
+    width: 16rem;
+    height: 16em;
+    background-color: white;
+    margin: 1.5rem;
+    box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+
+    @mixin atSmall{
+      width: 24rem;
+      height: 24em;
+      margin: 0;
+    }
+  }
+
+
+  &__service-heading{
+    color: $mainBlue;
+  }
+
+  &__hover-content{
+
+    background: rgba( 255, 255, 255, 0.9 );
+    bottom: -80%;
+    height: 100%;
+    left: 0%;
+    text-align: center;
+    position: relative;
+    transition: bottom 0.5s ease;
+    width: 100%;
+  }
+
+
+  &__hover-content:hover{
+    bottom: -12%;
+  }
+
+  &__hover-content ul{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+    line-height: 2;
+  }
+
+  &__fas{
+    position: absolute;
+    padding-left: 18%;
+    padding-top: 20%;
+    color: $mainBlue;
+
+    @mixin atSmall{
+    padding-left: 30%;
+    }
+  }
+
+
+
+}
