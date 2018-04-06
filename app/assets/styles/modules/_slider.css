@@ -1,20 +1,22 @@
 @keyframes slidy {
 0% { left: 0%; }
 20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
+25% { left: -75%; }
+45% { left: -75%; }
+50% { left: -150%; }
+70% { left: -150%; }
+75% { left: -225%; }
+90% { left: -225%; }
 95% { left: -300%; }
-100% { left: -400%; }
+100% { left: -300%; }
 }
 
 div#captioned-gallery {
   width: 60%;
   height: 30rem;
   overflow: hidden;
-  margin-top: 12rem;
+  margin-top: 5rem;
+  display: inline-block;
 }
 .slider {
   position: relative;

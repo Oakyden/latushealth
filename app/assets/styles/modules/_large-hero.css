@@ -122,7 +122,7 @@ display: none;
 
     z-index: -1 ;
     position: relative;
-    color: rgba(255,255,255, 0.6);
+    color: rgba(255,255,255, 0.4);
 
     @mixin atSmall{
     font-size: 7rem;

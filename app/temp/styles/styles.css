@@ -477,6 +477,28 @@ img {
   z-index: 5;
 }
 
+.section-sub-heading{
+  color: grey;
+  font-family: sans-serif;
+  letter-spacing: 10px;
+  margin-top: 6rem;
+  display: inline-block;
+  line-height: 0.8;
+
+
+}
+
+.section-sub-heading-indent{
+  letter-spacing: -3px;
+  color: lightgrey;
+  font-family: sans-serif;
+}
+
+.indent-right{
+  right: 0;
+  position: absolute;
+}
+
 #mySidenav{
 
   width: 100vw;
@@ -728,7 +750,7 @@ display: none;
 
     z-index: -1 ;
     position: relative;
-    color: rgba(255,255,255, 0.6);
+    color: rgba(255,255,255, 0.4);
   }
 
 @media (min-width: 530px) {
@@ -980,7 +1002,6 @@ img.grayscale:hover {
   }
 
 .clients__text-content{
-    padding-top: 5rem;
     color: rgb(78, 78, 78);
     width: 90%;
     margin: 0 auto;
@@ -1217,7 +1238,7 @@ img.grayscale:hover {
 @media (min-width: 530px) {
 
 .services__inner {
-    height: 50vh;
+    height: 40vh;
     width: 100%
   }
   }
@@ -1254,7 +1275,7 @@ img.grayscale:hover {
 
 .services__hover-container{
       margin-top: 2%;
-      padding-left: 15%
+      text-align: center
   }
   }
 
@@ -1263,8 +1284,8 @@ img.grayscale:hover {
   }
 
 .services__hover-box{
-    width: 16rem;
-    height: 16em;
+    width: 8rem;
+    height: 8em;
     background-color: white;
     margin: 1.5rem;
     -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
@@ -1277,14 +1298,14 @@ img.grayscale:hover {
 @media (min-width: 530px) {
 
 .services__hover-box{
-      width: 24rem;
-      height: 24em
+      width: 18rem;
+      height: 18em
   }
   }
 
 .services__hover-box2{
-    width: 16rem;
-    height: 16em;
+    width: 8rem;
+    height: 8rem;
     background-color: white;
     margin: 1.5rem;
     -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
@@ -1297,8 +1318,8 @@ img.grayscale:hover {
 @media (min-width: 530px) {
 
 .services__hover-box2{
-      width: 24rem;
-      height: 24em;
+      width: 18rem;
+      height: 18rem;
       margin: 0
   }
   }
@@ -1314,7 +1335,7 @@ img.grayscale:hover {
     height: 100%;
     left: 0%;
     text-align: center;
-    position: relative;
+    position: absolute;
     -webkit-transition: bottom 0.5s ease;
     transition: bottom 0.5s ease;
     width: 100%;
@@ -1337,17 +1358,11 @@ img.grayscale:hover {
   }
 
 .services__fas{
-    position: absolute;
-    padding-left: 18%;
     padding-top: 20%;
     color: rgb(34, 129, 255);
   }
 
 @media (min-width: 530px) {
-
-.services__fas{
-    padding-left: 30%
-  }
   }
 
 #footer{
@@ -1726,32 +1741,35 @@ img.grayscale:hover {
 @-webkit-keyframes slidy {
 0% { left: 0%; }
 20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
+25% { left: -75%; }
+45% { left: -75%; }
+50% { left: -150%; }
+70% { left: -150%; }
+75% { left: -225%; }
+90% { left: -225%; }
 95% { left: -300%; }
-100% { left: -400%; }
+100% { left: -300%; }
 }
 
 @keyframes slidy {
 0% { left: 0%; }
 20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
+25% { left: -75%; }
+45% { left: -75%; }
+50% { left: -150%; }
+70% { left: -150%; }
+75% { left: -225%; }
+90% { left: -225%; }
 95% { left: -300%; }
-100% { left: -400%; }
+100% { left: -300%; }
 }
 
 div#captioned-gallery {
   width: 60%;
   height: 30rem;
   overflow: hidden;
-  margin-top: 12rem;
+  margin-top: 5rem;
+  display: inline-block;
 }
 
 .slider {
@@ -1783,3 +1801,302 @@ figcaption {
   width: 100%;
   font-size: 2rem; padding: .6rem;
 }
+
+@-webkit-keyframes slidytwo {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -100%; }
+70% { left: -200%; }
+95% { left: -200%; }
+100% { left: -200%; }
+}
+
+@keyframes slidytwo {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -100%; }
+70% { left: -200%; }
+95% { left: -200%; }
+100% { left: -200%; }
+}
+
+div#case-captioned-gallery {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slider-case {
+  position: relative;
+  width: 300%;
+  font-size: 0;
+  -webkit-animation: 30s slidytwo infinite;
+          animation: 30s slidytwo infinite;
+}
+
+.slider-case-figure {
+  width: 33.333%;
+  display: inline-block;
+  position: inherit;
+  top: 0;
+  height: 100%;
+
+}
+
+.slider-case-figure img {
+  height: 100%;
+  width: 100%;
+ }
+
+.casestudy__wrapper{
+
+float: right;
+width: 30%;
+margin-top: 10rem;
+}
+
+.casestudy__wrapper h2{
+    color: rgb(34, 129, 255);
+    font-size: 2rem;
+  }
+
+.casestudy__wrapper span{
+    color: grey;
+      font-weight: 100;
+      font-family: sans-serif;
+      font-size: 1.2rem;
+  }
+
+.casestudy__button{
+  font-size: 14px;
+  background: transparent;
+  padding: 12px 25px 10px 25px;
+  font-weight: 100;
+  border:2px rgb(34, 129, 255) solid;
+  color: rgb(34, 129, 255);
+  margin-top: 2rem;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.case-study #services{
+    height: 1000px;
+
+  }
+
+@media (min-width: 530px) {
+
+.case-study #services{
+      height: 600px
+
+  }
+  }
+
+.case-study-services {
+    position: relative;
+    background-color: #dce7fb;
+    height: 60vh;
+
+
+
+  }
+
+.case-study-services__inner {
+      position: relative;
+      background-color: #00aeef;
+      margin-top: 40%;
+      height: 600px;
+      margin: 0 auto;
+      height: 200px;
+    }
+
+@media (min-width: 530px) {
+
+.case-study-services__inner {
+      height: 40vh;
+      width: 100%
+    }
+  }
+
+.case-study-services__image {
+      display: block;
+    }
+
+.case-study-services__subtitle {
+      font-weight: 700;
+      color: white;
+      font-size: 1.2rem;
+      margin: 0;
+      padding-top: 5%;
+      z-index: 3;
+      text-align: center;
+    }
+
+@media (min-width: 530px) {
+
+.case-study-services__subtitle {
+        font-size: 2rem;
+        padding-right: 5%;
+        padding-left: 5%
+    }
+  }
+
+.case-study-services__hover-container{
+      width: 95%;
+      margin: 0 auto;
+    }
+
+@media (min-width: 530px) {
+
+.case-study-services__hover-container{
+        margin-top: 2%;
+        text-align: center
+    }
+  }
+
+.case-study-services__hover-box-container{
+      display: inline-block;
+    }
+
+.case-study-services__hover-box{
+      width: 8rem;
+      height: 8em;
+      background-color: white;
+      margin: 1.5rem;
+      -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: inline-block;
+      position: relative;
+    }
+
+@media (min-width: 530px) {
+
+.case-study-services__hover-box{
+        width: 24rem;
+        height: 34rem
+    }
+  }
+
+.case-study-services__hover-box2{
+      width: 8rem;
+      height: 8rem;
+      background-color: white;
+      margin: 1.5rem;
+      -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: inline-block;
+      position: relative;
+    }
+
+@media (min-width: 530px) {
+
+.case-study-services__hover-box2{
+        width: 24rem;
+        height: 34rem;
+        margin: 0
+    }
+  }
+
+.case-study-services__service-heading{
+      color: #00aeef;
+    }
+
+.case-study-services__hover-content{
+
+      background: rgba( 255, 255, 255, 0.9 );
+      height: 100%;
+      left: 0%;
+      text-align: center;
+      position: absolute;
+      -webkit-transition: bottom 0.5s ease;
+      transition: bottom 0.5s ease;
+      width: 100%;
+    }
+
+.case-study-services__hover-content ul{
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.5);
+      list-style-type: none;
+      padding: 0;
+      margin-top: 30px;
+      line-height: 2;
+    }
+
+.case-study-services__fas{
+      padding-top: 20%;
+      color: #00aeef;
+    }
+
+@media (min-width: 530px) {
+  }
+
+/*end services*/
+
+.case-study__button{
+    font-size: 14px;
+    background: transparent;
+    padding: 12px 25px 10px 25px;
+    font-weight: 100;
+    border:2px #00aeef solid;
+    color: #00aeef;
+    margin-top: 2rem;
+    font-family: 'Rubik', sans-serif;
+  }
+
+.case-study__header{
+  position: relative;
+  height: 70vh;
+  -webkit-clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
+          clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
+  background-image: url("../../assets/images/officeworker.jpg");
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+@media (min-width: 530px) {
+
+.case-study {
+    background-image: url()
+    /*background-color: $mainBlue;*/
+
+
+}
+  }
+
+.case-study__translucent{
+    background-color: rgba(16, 63, 204, 0.8);
+    height: 100%;
+    z-index: -2;
+    position: relative;
+  }
+
+.case-study__overview{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: -5%;
+    z-index: 2;
+    position: relative;
+    padding: 5%;
+    -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+.case-study__overview-description{
+      width: 60%;
+      display: inline-block;
+    }
+
+.case-study__overview-tags{
+      display: inline-block;
+    }

@@ -22,7 +22,7 @@
     height: 200px;
 
     @mixin atSmall{
-    height: 50vh;
+    height: 40vh;
     width: 100%;
     }
   }
@@ -55,7 +55,7 @@
 
     @mixin atSmall{
       margin-top: 2%;
-      padding-left: 15%;
+      text-align: center;
     }
   }
 
@@ -64,8 +64,8 @@
   }
 
   &__hover-box{
-    width: 16rem;
-    height: 16em;
+    width: 8rem;
+    height: 8em;
     background-color: white;
     margin: 1.5rem;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
@@ -74,15 +74,15 @@
     position: relative;
 
     @mixin atSmall{
-      width: 24rem;
-      height: 24em;
+      width: 18rem;
+      height: 18em;
 
     }
   }
 
   &__hover-box2{
-    width: 16rem;
-    height: 16em;
+    width: 8rem;
+    height: 8rem;
     background-color: white;
     margin: 1.5rem;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
@@ -91,8 +91,8 @@
     position: relative;
 
     @mixin atSmall{
-      width: 24rem;
-      height: 24em;
+      width: 18rem;
+      height: 18rem;
       margin: 0;
     }
   }
@@ -109,7 +109,7 @@
     height: 100%;
     left: 0%;
     text-align: center;
-    position: relative;
+    position: absolute;
     transition: bottom 0.5s ease;
     width: 100%;
   }
@@ -132,13 +132,11 @@
   }
 
   &__fas{
-    position: absolute;
-    padding-left: 18%;
     padding-top: 20%;
     color: $mainBlue;
 
+
     @mixin atSmall{
-    padding-left: 30%;
     }
   }
 

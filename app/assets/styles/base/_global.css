@@ -23,3 +23,25 @@ img {
   position: absolute;
   z-index: 5;
 }
+
+.section-sub-heading{
+  color: grey;
+  font-family: sans-serif;
+  letter-spacing: 10px;
+  margin-top: 6rem;
+  display: inline-block;
+  line-height: 0.8;
+
+
+}
+
+.section-sub-heading-indent{
+  letter-spacing: -3px;
+  color: lightgrey;
+  font-family: sans-serif;
+}
+
+.indent-right{
+  right: 0;
+  position: absolute;
+}

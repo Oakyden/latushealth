@@ -1,0 +1,35 @@
+@keyframes slidytwo {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -100%; }
+70% { left: -200%; }
+95% { left: -200%; }
+100% { left: -200%; }
+}
+
+div#case-captioned-gallery {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+.slider-case {
+  position: relative;
+  width: 300%;
+  font-size: 0;
+  animation: 30s slidytwo infinite;
+}
+.slider-case-figure {
+  width: 33.333%;
+  display: inline-block;
+  position: inherit;
+  top: 0;
+  height: 100%;
+
+}
+
+.slider-case-figure img {
+  height: 100%;
+  width: 100%;
+ }
