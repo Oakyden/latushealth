@@ -68,7 +68,7 @@
     height: 16em;
     background-color: white;
     margin: 1.5rem;
-    box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -85,7 +85,7 @@
     height: 16em;
     background-color: white;
     margin: 1.5rem;
-    box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: inline-block;
     position: relative;

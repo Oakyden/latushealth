@@ -43,13 +43,15 @@ display: none;
 
   @mixin atSmall {
     background-image: url();
-    background-color: $mainBlue;
+    /*background-color: $mainBlue;*/
 
   }
 
   &__translucent{
-    background-color: rgb(16, 63, 204, 0.8);
+    background-color: rgba(16, 63, 204, 0.8);
     height: 100%;
+    z-index: -2;
+    position: relative;
   }
 
   &__image {
@@ -118,16 +120,17 @@ display: none;
 
   &__backing-text{
 
-    display: none;
+    z-index: -1 ;
+    position: relative;
+    color: rgba(255,255,255, 0.6);
 
     @mixin atSmall{
     font-size: 7rem;
     font-weight: bold;
-    color: #fff;
     padding-top: 7%;
     padding-left: 5%;
-    z-index: -1;
-    opacity: 0.6;
+
+
 
     }
   }

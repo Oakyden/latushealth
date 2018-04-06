@@ -12,7 +12,7 @@
 .beginningImgWrapper img{
   max-width: 100%;
   max-height: 100%;
-  box-shadow: 5px 5px 25px rgba(0,0,0,.1);
+  box-shadow: 5px 5px 25px rgba(0,0,0,.2);
   margin-top: 30%;
 
   @mixin atSmall{

@@ -1,3 +1,13 @@
+#mySidenav{
+
+  width: 100vw;
+
+  @mixin atSmall{
+
+  width: 30vw;
+  }
+}
+
 .menuButton{
   background-color: #fff;
   border-radius: 50%;

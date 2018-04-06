@@ -7,13 +7,12 @@
   <meta name="description" content="Providing a full spectrum of occupational health services">
 
   <link rel="stylesheet" href="temp/styles/styles.css">
-  <link rel="stylesheet" href="temp/styles/contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 </head>
 <body>
-<div class="menu-overlay display-none"></div>
+<div class="menu-overlay display-none">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="sidenav__item"><a href="#">Clients</a></div>
@@ -22,12 +21,13 @@
     <div class="sidenav__item"><a href="#">Services</a></div>
     <img id="navLogo" alt="latus logo" src="assets/images/logos/latus-mainblue.png">
   </div>
+</div>
 
   <div class="menuButton">
     <span onclick="openNav()">&#9776;</span>
   </div>
 
-  <img  class="website-logo" src="assets/images/logos/latus-mainblue.png">
+  <a href="index.html"><img  class="website-logo" src="assets/images/logos/latus-mainblue.png"></a>
 
   <h1 class="contact__title">We want to hear from you</h1>
 
@@ -44,7 +44,7 @@
       </div>
 
       <div class="contact__img-one">
-        <div id="contact__form-container" class="display-none">
+        <div id="contact__form-container" class="contact__content-container" class="display-none">
             <form class="contact__form" action="/action_page.php">
               <label for="fname">First Name</label>
               <input type="text" class="contact__input-field" name="firstname" placeholder="Your name..">
@@ -55,18 +55,18 @@
               <label for="subject">Subject</label>
               <textarea class="contact__input-field" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-              <input id="contact__form-submit" type="submit" value="Submit">
+              <input class="contact__form-submit" type="submit" value="Submit">
             </form>
         </div>
 
-        <div id="contact__phone-container" class="display-none">
+        <div id="contact__phone-container" class="contact__content-container display-none">
           <div class="contact__phone-content">
             <span>01482 640537</span><br>
             <i class="fas fa-phone fa-7x"></i>
           </div>
         </div>
 
-        <div id="contact__social-container" class="display-none">
+        <div id="contact__social-container" class="contact__content-container display-none">
           <div class="contact__social-content">
             <a href="https://www.facebook.com/latustrainingltd/"><i class="fab fa-facebook-square fa-7x"></i><span>Facebook</span></a><br>
             <a href="https://www.instagram.com/latustraining/"><i class="fab fa-instagram fa-7x"></i><span>Instagram</span></a><br>
