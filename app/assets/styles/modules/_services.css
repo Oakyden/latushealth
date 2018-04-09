@@ -1,8 +1,13 @@
 #services{
-  height: 1000px;
 
-  @mixin atSmall{
-    height: 600px;
+height: 300vh;
+
+  @mixin atMedium{
+    height: 90vh;
+  }
+
+  @mixin atLarge{
+    height: 50vh;
   }
 
 }
@@ -10,7 +15,7 @@
 .services {
   position: relative;
   background-color: #dce7fb;
-  height: 60vh;
+  height: 70vh;
 
 
   &__inner {
@@ -52,48 +57,51 @@
   &__hover-container{
     width: 95%;
     margin: 0 auto;
+    text-align: center;
 
     @mixin atSmall{
       margin-top: 2%;
-      text-align: center;
+
     }
   }
 
   &__hover-box-container{
     display: inline-block;
-  }
+    text-align: center;
+    padding-top: 15%;
+    margin: 1rem;
 
-  &__hover-box{
-    width: 8rem;
-    height: 8em;
-    background-color: white;
-    margin: 1.5rem;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-
-    @mixin atSmall{
-      width: 18rem;
-      height: 18em;
-
+    @mixin atMedium{
+      padding-top: 0% ;
     }
   }
 
-  &__hover-box2{
-    width: 8rem;
-    height: 8rem;
+  &__hover-box{
+    width: 14rem;
+    height: 14em;
     background-color: white;
-    margin: 1.5rem;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: inline-block;
     position: relative;
 
-    @mixin atSmall{
-      width: 18rem;
-      height: 18rem;
-      margin: 0;
+    @mixin atMedium{
+
+    }
+
+  }
+
+  &__hover-box2{
+    width: 14rem;
+    height: 14rem;
+    background-color: white;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+
+    @mixin atMedium{
+      margin-top: 5%;
     }
   }
 

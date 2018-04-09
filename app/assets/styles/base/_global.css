@@ -31,14 +31,19 @@ img {
   margin-top: 6rem;
   display: inline-block;
   line-height: 0.8;
+  font-size: 0.8rem;
 
+@mixin atMedium{
+font-size: 1rem;
+}
 
 }
 
 .section-sub-heading-indent{
-  letter-spacing: -3px;
-  color: lightgrey;
-  font-family: sans-serif;
+  border-top: 1px solid lightgrey;
+  width: 20vw;
+  margin-top: 10%;
+  display: inline-block;
 }
 
 .indent-right{

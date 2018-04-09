@@ -12,11 +12,16 @@
 }
 
 div#captioned-gallery {
-  width: 60%;
-  height: 30rem;
+  width: 100%;
   overflow: hidden;
-  margin-top: 5rem;
-  display: inline-block;
+  margin-top: 2rem;
+
+  @mixin atMedium{
+    width: 60%;
+    overflow: hidden;
+    margin-top: 5rem;
+    display: inline-block;
+  }
 }
 .slider {
   position: relative;
@@ -28,8 +33,16 @@ div#captioned-gallery {
   width: 14%;
   display: inline-block;
   position: inherit;
-  height: 30rem;
+  height: 10rem;
   margin-right: 1%;
+
+  @mixin atMedium{
+    height: 18rem;
+  }
+
+  @mixin atLarge{
+  height: 30rem;
+  }
 }
 
 .slider-figure img {
@@ -40,7 +53,7 @@ div#captioned-gallery {
 figcaption {
   position: absolute;
   bottom: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 102, 255, 0.5);
   color: #fff;
   width: 100%;
   font-size: 2rem; padding: .6rem;

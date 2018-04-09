@@ -4,7 +4,7 @@
   position: absolute;
   z-index: 1;
 
-  @mixin atSmall{
+  @mixin atMedium{
     width: 50vw;
   }
 }
@@ -15,7 +15,7 @@
   box-shadow: 5px 5px 25px rgba(0,0,0,.2);
   margin-top: 30%;
 
-  @mixin atSmall{
+  @mixin atMedium{
     margin: 0%;
   }
 
@@ -50,7 +50,7 @@
   &__text-content {
     width: 95%;
 
-    @mixin atSmall{
+    @mixin atMedium{
       width: 70%;
       float: right;
 
@@ -67,7 +67,7 @@
     position: absolute;
     padding-top: 5%;
 
-    @mixin atSmall {
+    @mixin atMedium {
       font-size: 3rem;
         text-align: right;
         position: absolute;
@@ -88,7 +88,7 @@
     margin: 0 auto;
 
 
-    @mixin atSmall {
+    @mixin atMedium {
       width: 65%;
       float: right;
       padding-top: 17rem;

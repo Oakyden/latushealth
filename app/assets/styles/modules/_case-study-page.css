@@ -157,11 +157,15 @@
 
   &__header{
   position: relative;
-  height: 70vh;
+  height: 20vh;
   clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
   background-image: url("../../assets/images/officeworker.jpg");
   background-size: cover;
   overflow: hidden;
+
+  @mixin atSmall{
+    height: 70vh;
+  }
 
 }
 

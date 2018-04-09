@@ -20,6 +20,14 @@ var heroImages = [
   "assets/images/mkm-staff.jpg"
 ];
 
+var heroAnimations = [
+"assets/images/animated/doctor.gif",
+"assets/images/animated/air-conditioner.gif",
+"assets/images/animated/businessman.gif",
+"assets/images/animated/builder.gif"
+
+];
+
 var backgroundColours = [
     "rgba(188, 32, 32, 0.8)",
   "rgba(98, 65, 244, 0.8)",
@@ -36,6 +44,7 @@ var changeHero = function() {
 
     $('.large-hero__title').addClass('animated fadeOutLeft');
     $('.large-hero__description').addClass('animated fadeOutRight');
+    $('.large-hero__animated').addClass('animated fadeOutDown');
 
     $('.large-hero__translucent').css("background-color", backgroundColours[i]);
 
@@ -50,9 +59,12 @@ var changeHero = function() {
     document.getElementsByClassName("large-hero__description")[0].innerHTML = descriptions[i];
     document.getElementsByClassName("large-hero__title")[0].src = logos[i];
     document.getElementsByClassName("large-hero__image")[0].src = heroImages[i];
+    document.getElementsByClassName("large-hero__animated")[0].src = heroAnimations[i];
+
     $('.headerImgWrapper > img, .large-hero__backing-text').removeClass('animated fadeOutLeft').css("display","none");
     $('.large-hero__title').removeClass('animated fadeOutLeft').css("display","none");
     $('.large-hero__description').removeClass('animated fadeOutRight').css("display","none");
+    $('.large-hero__animated').removeClass('animated fadeOutDown').css("display","none");
 
 
         setTimeout(function(){
@@ -64,6 +76,15 @@ var changeHero = function() {
 
         setTimeout(function(){
           $('.large-hero__title').addClass('animated fadeInRight').css("display","block");
+          $('.large-hero__animated').addClass('animated fadeInUp').css("display","block");
+
+          if(i===1){
+            $('.large-hero__animated').addClass('animated-margin');
+            console.log("i think its 1");
+          }else{
+            $('.large-hero__animated').removeClass('animated-margin');
+            console.log("i");
+          };
 
         },300);
 
