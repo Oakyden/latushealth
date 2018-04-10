@@ -2,8 +2,12 @@
 
   height: 120vh;
 
+  @mixin atMedium{
+    height: 90vh;
+  }
+
   @mixin atLarge{
-  height: 140vh;
+  height: 120vh;
   }
 }
 
@@ -17,11 +21,11 @@
     position: relative;
 
     @mixin atMedium{
-      height: 60vh;
+      height: 45vh;
     }
 
     @mixin atLarge{
-      height: 70vh;
+      height: 60vh;
     }
 
   }
@@ -66,8 +70,8 @@
     background-color: rgba(0, 55, 148, 0.75);
     position: absolute;
     height: 15rem;
-    margin-top: 20%;
-    margin-left: 5%;
+    margin-top: -2%;
+    margin-left: 15%;
     padding: 2%;
   }
 
