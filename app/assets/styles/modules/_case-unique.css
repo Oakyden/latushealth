@@ -1,0 +1,57 @@
+.color{
+  &__groupe{
+    color: $groupeRed !important;
+  }
+
+  &__tWaste{
+    color: $twasteBlue !important;
+  }
+
+  &__ronDearing{
+    color: $ronDearingPurple !important;
+  }
+}
+
+.background-color{
+  &__groupe{
+  background-color: $groupeRed !important;
+  }
+
+  &__tWaste{
+    background-color: $twasteBlue !important;
+  }
+
+  &__ronDearing{
+    background-color: $ronDearingPurple !important;
+  }
+}
+
+.border{
+  &__groupe{
+    border-color: $groupeRed !important;
+  }
+
+  &__tWaste{
+    border-color: $twasteBlue !important;
+  }
+
+  &__ronDearing{
+    border-color: $ronDearingPurple !important;
+  }
+}
+
+.logo-margin{
+  &__groupe{
+    margin-left: -230px;
+  }
+
+  &__tWaste{
+    margin-left: -130px;
+  }
+
+  &__ronDearing{
+    margin-left: -130px;
+  }
+
+
+}

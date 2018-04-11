@@ -3,12 +3,12 @@
 20% { left: 0%; }
 25% { left: -75%; }
 45% { left: -75%; }
-50% { left: -150%; }
-70% { left: -150%; }
-75% { left: -225%; }
-90% { left: -225%; }
-95% { left: -300%; }
-100% { left: -300%; }
+50% { left: -135%; }
+70% { left: -135%; }
+75% { left: -75%; }
+90% { left: -75%; }
+95% { left: -0%; }
+100% { left: -0%; }
 }
 
 div#captioned-gallery {
@@ -27,7 +27,7 @@ div#captioned-gallery {
   position: relative;
   width: 500%;
   font-size: 0;
-  animation: 30s slidy infinite;
+  animation: 15s slidy infinite;
 }
 .slider-figure {
   width: 14%;

@@ -85,6 +85,11 @@ height: 300vh;
     display: inline-block;
     position: relative;
 
+    img {
+        width: 80%;
+        padding: 5%;
+    }
+
     @mixin atMedium{
 
     }
@@ -100,10 +105,17 @@ height: 300vh;
     display: inline-block;
     position: relative;
 
+    img {
+        width: 80%;
+        padding: 5%;
+    }
+
     @mixin atMedium{
       margin-top: 5%;
     }
   }
+
+
 
 
   &__service-heading{

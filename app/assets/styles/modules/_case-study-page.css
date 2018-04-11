@@ -7,25 +7,7 @@
     font-size: 14px;
     background: nslnsparent;
     font-weight: 100;
-    border:2px #00aeef solid;
-    color: #00aeef;
-    font-family: 'Rubik', sans-serif;
-
-    @mixin atMedium{
-    font-size: 14px;
-    padding: 12px 25px 10px 25px;
-    margin-top: 2rem;
-    }
-  }
-
-  &__button-groupe{
-
-    padding: 8px 12px 6px 12px;
-    font-size: 14px;
-    background: nslnsparent;
-    font-weight: 100;
-    border:2px $groupeRed solid;
-    color: $groupeRed;
+    border:2px solid;
     font-family: 'Rubik', sans-serif;
 
     @mixin atMedium{
@@ -59,7 +41,7 @@
   &__logo{
     display: block;
     position: absolute;
-    left: 40%;
+    left: 50%;
     top: 30%;
     max-width: 35%;
     z-index: 1;
@@ -76,22 +58,9 @@
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
     }
 
-    &__inner-groupe{
-      text-align: center;
-      background-color: $groupeRed;
-      width: 100%;
-      position: absolute;
-      z-index: -1;
-      height: 10rem;
-
-      @mixin atMedium{
-          height: 20rem;
-      }
-    }
 
     &__inner{
       text-align: center;
-      background-color: #00aeef;
       width: 100%;
       position: absolute;
       z-index: -1;
@@ -113,14 +82,8 @@
       }
     }
 
-    &__overview-services-groupe{
-      font-weight: bold;
-      color: $groupeRed;
-    }
-
     &__overview-services{
       font-weight: bold;
-      color: #00aeef;
     }
 
 
@@ -204,13 +167,7 @@
       font-size: 0.9rem;
     }
 
-    &__deliverable-groupe h3{
-      color: $groupeRed;
-      margin-top: 3rem;
-    }
-
     &__deliverable h3{
-      color:  #00aeef;
       margin-top: 3rem;
     }
 
@@ -232,10 +189,5 @@
     &__deliverable-services{
       font-weight: bold;
     }
-
-    &__color-footer{
-      background-color: $groupeRed !important;
-    }
-
 
 }
