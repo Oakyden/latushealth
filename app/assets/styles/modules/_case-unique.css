@@ -42,7 +42,16 @@
 
 .logo-margin{
   &__groupe{
-    margin-left: -230px;
+
+    margin-left: -18%;
+
+    @mixin atMedium{
+      margin-left: -18%;
+    }
+
+    @mixin atLarge{
+        margin-left: -320px;
+    }
   }
 
   &__tWaste{
@@ -50,7 +59,11 @@
   }
 
   &__ronDearing{
-    margin-left: -130px;
+    margin-left: -15%;
+
+    @mixin atLarge{
+      margin-left: -6%;
+    }
   }
 
 

@@ -16,7 +16,7 @@ div#captioned-gallery {
   overflow: hidden;
   margin-top: 2rem;
 
-  @mixin atMedium{
+  @mixin atLarge{
     width: 60%;
     overflow: hidden;
     margin-top: 5rem;
@@ -25,19 +25,25 @@ div#captioned-gallery {
 }
 .slider {
   position: relative;
-  width: 500%;
+  width: 100%;
   font-size: 0;
-  animation: 15s slidy infinite;
+
+
+  @mixin atMedium{
+      width: 500%;
+        animation: 15s slidy infinite;
+  }
 }
 .slider-figure {
-  width: 14%;
+  width: 32.3%;
   display: inline-block;
   position: inherit;
   height: 10rem;
   margin-right: 1%;
 
   @mixin atMedium{
-    height: 18rem;
+    width: 14%;
+    height: 26rem;
   }
 
   @mixin atLarge{

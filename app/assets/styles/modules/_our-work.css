@@ -4,12 +4,14 @@
 &__wrapper{
 
 text-align: center;
+display: none;
 
-@mixin atMedium{
+@mixin atLarge{
   float: right;
   width: 30%;
   text-align: left;
   padding-top: 10%;
+  display: block;
 }
 
   & h2{
@@ -43,6 +45,6 @@ text-align: center;
   margin-bottom: 2rem;
   font-family: 'Rubik', sans-serif;
 
-}
+  }
 
 }

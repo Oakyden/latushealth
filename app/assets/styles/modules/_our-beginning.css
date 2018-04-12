@@ -1,27 +1,3 @@
-.beginningImgWrapper{
-  width: 100%;
-  left: 0;
-  position: absolute;
-  z-index: 1;
-
-  @mixin atMedium{
-    width: 50vw;
-  }
-}
-
-.beginningImgWrapper img{
-  max-width: 100%;
-  max-height: 100%;
-  box-shadow: 5px 5px 25px rgba(0,0,0,.2);
-  margin-top: 30%;
-
-  @mixin atMedium{
-    margin: 0%;
-  }
-
-}
-
-
 .our-beginning {
   position: relative;
   background-color: #dce7fb;
@@ -34,13 +10,46 @@
     width: 85%;
     height: 600px;
     margin: 0 auto;
-    height: 700px;
+    height: 800px;
 
     @mixin atSmall{
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     margin-top: 1%;
     }
+
+    @mixin atMedium{
+      height: 35vh;
+    }
+
+    @mixin atLarge{
+    height: 45rem;
+    width: 100%;
+    margin-top: 1%;
+    }
+  }
+
+  &__img-wrapper{
+    width: 100%;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+
+    @mixin atSmall{
+      width: 50vw;
+    }
+  }
+
+  &__img-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+    margin-top: 5rem;
+
+    @mixin atMedium{
+      margin: 0%;
+    }
+
   }
 
   &__image {
@@ -67,12 +76,11 @@
     position: absolute;
     padding-top: 5%;
 
-    @mixin atMedium {
-      font-size: 3rem;
+    @mixin atSmall {
+      font-size: 2.5rem;
         text-align: right;
         position: absolute;
         right: 10%;
-        margin: 5%;
     }
 
   }
@@ -88,16 +96,36 @@
     margin: 0 auto;
 
 
-    @mixin atMedium {
+    @mixin atSmall {
+      width: 45%;
+      float: right;
+      padding-top: 12rem;
+      text-align: left;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.3);
+      font-family: sans-serif;
+      font-size: 1.1rem;
+    }
+
+    @mixin atMedium{
       width: 65%;
       float: right;
-      padding-top: 17rem;
+      padding-top: 10rem;
       text-align: left;
       padding-right: 12%;
       font-weight: 300;
       color: rgba(0, 0, 0, 0.3);
       font-family: sans-serif;
+      font-size: 1.1rem;
     }
+
+    @mixin atLarge{
+      padding-top: 16rem;
+    }
+
+
   }
 
 }

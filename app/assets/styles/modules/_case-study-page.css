@@ -19,13 +19,13 @@
 
   &__header{
   position: relative;
-  height: 20vh;
+  height: 30vh;
   clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
   overflow: hidden;
   text-align: center;
 
   @mixin atMedium{
-    height: 50vh;
+    height: 40vh;
   }
 
   @mixin atLarge{
@@ -54,8 +54,13 @@
     margin-top: -5%;
     z-index: 2;
     position: relative;
-    padding: 5%;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+
+    @mixin atMedium{
+      padding: 4%;
+
+    }
+
     }
 
 
@@ -75,6 +80,11 @@
 
       display: inline-block;
       font-size: 0.8rem;
+      color: #5e5e5e;
+
+      @mixin atSmall{
+        font-size: 1rem;
+      }
 
       @mixin atMedium{
         font-size: 1rem;
@@ -92,15 +102,21 @@
 
       display: block;
       font-size: 0.8rem;
+      margin-top: 2rem;
+
+      @mixin atSmall{
+        font-size: 1rem;
+      }
 
       @mixin atMedium{
       width: 35%;
       float: right;
       font-size: 1rem;
+      margin-top: 0;
       }
 
       @mixin atLarge{
-        width: 35%;
+        width: 30%;
       }
     }
 
@@ -151,6 +167,10 @@
       border-radius: 50%;
       padding: 1%;
 
+      @mixin atSmall{
+        margin-bottom: -15%;
+      }
+
       @mixin atMedium{
         margin-bottom: -18%;
       }
@@ -171,9 +191,6 @@
       margin-top: 3rem;
     }
 
-    &__deliverable p{
-      font-family: sans-serif;
-    }
 
     &__deliverable ul{
       list-style-type: none;

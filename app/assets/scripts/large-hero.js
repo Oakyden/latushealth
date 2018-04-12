@@ -31,7 +31,7 @@ var heroAnimations = [
 var backgroundColours = [
     "rgba(188, 32, 32, 1)",
   "rgba(98, 65, 244, 1)",
-  "rgba(188, 170, 32, 1)",
+  "rgba(231, 208, 37, 1)",
     "rgba(34, 129, 255, 1)"
 ];
 

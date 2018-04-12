@@ -1,9 +1,9 @@
 #testimonials{
 
-  height: 120vh;
+  height: 40rem;
 
   @mixin atMedium{
-    height: 90vh;
+    height: 50rem;
   }
 
   @mixin atLarge{
@@ -17,11 +17,11 @@
 
     width: 80%;
     margin: 0 auto;
-    height: 60vh;
+    height: 20rem;
     position: relative;
 
     @mixin atMedium{
-      height: 45vh;
+      height: 20rem;
     }
 
     @mixin atLarge{
