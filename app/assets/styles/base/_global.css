@@ -50,3 +50,28 @@ font-size: 1rem;
   right: 0;
   position: absolute;
 }
+
+.website-logo{
+  width: 150px;
+  margin-top: 8%;
+  margin-left: 3%;
+
+  @mixin atSmall {
+    width: 300px;
+    margin-top: 3%;
+    margin-left: 3%;
+
+  }
+}
+
+.website-logo--case{
+  display: block;
+  position: absolute;
+  width: 80px !important;
+  margin-top: 5% !important;
+  z-index: 1;
+
+  @mixin atSmall{
+    width: 300px !important;
+  }
+}

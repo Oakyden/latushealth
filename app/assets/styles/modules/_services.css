@@ -1,22 +1,11 @@
 #services{
 
-height: 1500px;
-
-  @mixin atSmall{
-    height: 40rem;
-  }
-
-  @mixin atLarge{
-    height: 60vh;
-  }
 
 }
 
 .services {
   position: relative;
   background-color: #dce7fb;
-  height: 70vh;
-
 
   &__inner {
     position: relative;
@@ -42,9 +31,9 @@ height: 1500px;
     color: $mainBlue;
     font-size: 1.2rem;
     margin: 0;
-    padding-top: 2rem;
+    padding: 2rem 0rem 0rem 2rem;
     z-index: 3;
-    text-align: center;
+
 
 
     @mixin atSmall {
@@ -54,114 +43,195 @@ height: 1500px;
     }
   }
 
-  &__hover-container{
-    width: 95%;
-    margin: 0 auto;
-    text-align: center;
-
-    @mixin atSmall{
-      margin-top: 2%;
-
-    }
-  }
-
-  &__hover-box-container{
-    display: inline-block;
-    text-align: center;
-    margin: 1rem;
-
-    @mixin atSmall{
-      padding-top: 0% ;
-    }
-  }
-
-  &__hover-box{
-    width: 13rem;
-    height: 13em;
-    background-color: white;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-
-    img {
-        width: 80%;
-        padding: 5%;
-    }
-
-    @mixin atMedium{
-      width: 14rem;
-      height: 14em;
-    }
-
-  }
-
-  &__hover-box2{
-    width: 13rem;
-    height: 13rem;
-    background-color: white;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-
-    img {
-        width: 80%;
-        padding: 5%;
-    }
-
-    @mixin atMedium{
-      margin-top: 5%;
-      width: 14rem;
-      height: 14rem;
-    }
-  }
-
-
-
 
   &__service-heading{
     color: $mainBlue;
   }
 
-  &__hover-content{
+}
 
-    background: rgba( 255, 255, 255, 0.9 );
-    bottom: -80%;
-    height: 100%;
-    left: 0%;
-    text-align: center;
-    position: absolute;
-    transition: bottom 0.5s ease;
-    width: 100%;
+
+  /*start timeline*/
+  @-webkit-keyframes Gradient {
+  	0% {
+  		background-position: 0% 50%
+  	}
+  	50% {
+  		background-position: 100% 50%
+  	}
+  	100% {
+  		background-position: 0% 50%
+  	}
   }
 
-
-  &__hover-content:hover{
-    bottom: -12%;
+  @-moz-keyframes Gradient {
+  	0% {
+  		background-position: 0% 50%
+  	}
+  	50% {
+  		background-position: 100% 50%
+  	}
+  	100% {
+  		background-position: 0% 50%
+  	}
   }
 
-  &__hover-content ul{
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.5);
+  @keyframes Gradient {
+  	0% {
+  		background-position: 0% 50%
+  	}
+  	50% {
+  		background-position: 100% 50%
+  	}
+  	100% {
+  		background-position: 0% 50%
+  	}
+  }
+
+  .timeline ul {
+    background: linear-gradient(-45deg, $innerBackground, $mainBlue, $innerBackground);
+background-size: 200% 200%;
+-webkit-animation: Gradient 15s ease infinite;
+-moz-animation: Gradient 15s ease infinite;
+animation: Gradient 15s ease infinite;
+    padding: 5rem 0;
+  }
+
+  .timeline ul li {
     list-style-type: none;
-    padding: 0;
-    margin-top: 30px;
-    line-height: 2;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
   }
 
-  &__fas{
-    padding-top: 20%;
-    color: $mainBlue;
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+  }
+
+  .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  .timeline ul li div img{
+    margin: -20% 0% 0% 60%;
+    max-width: 30%;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .timeline ul li:nth-child(odd) div {
+    left: 45px;
+  }
+
+  .timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent $mainBlue transparent transparent;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -439px;
+  }
+
+  .timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent $mainBlue;
+  }
+
+  time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
 
 
-    @mixin atSmall{
+  /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .timeline ul li::after {
+    transition: background .5s ease-in-out;
+  }
+
+  .timeline ul li.in-view::after {
+    background: $mainBlue;
+  }
+
+  .timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+  }
+
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+  }
+
+  .timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  /* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  @media screen and (max-width: 900px) {
+    .timeline ul li div {
+      width: 250px;
+    }
+    .timeline ul li:nth-child(even) div {
+      left: -289px;
+      /*250+45-6*/
     }
   }
 
-
-
-}
+  @media screen and (max-width: 600px) {
+    .timeline ul li {
+      margin-left: 20px;
+    }
+    .timeline ul li div {
+      width: calc(100vw - 91px);
+    }
+    .timeline ul li:nth-child(even) div {
+      left: 45px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent $mainBlue transparent transparent;
+    }
+  }
+  /*end timeline*/

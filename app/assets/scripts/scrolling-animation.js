@@ -13,4 +13,10 @@ sr.reveal('.our-beginning__description, .our-beginning__subtitle', {
   distance: '30rem'
 });
 
+sr.reveal('.case-slider', {
+  duration: 2000,
+  origin: 'left',
+  distance: '30rem'
+});
+
 sr.reveal('.testimonial__container', {duration: 1000}, 500);

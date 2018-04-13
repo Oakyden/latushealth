@@ -55,7 +55,11 @@
   }
 
   &__tWaste{
-    margin-left: -130px;
+    margin-left: -70px;
+
+    @mixin atMedium{
+      margin-left: -130px;
+    }
   }
 
   &__ronDearing{

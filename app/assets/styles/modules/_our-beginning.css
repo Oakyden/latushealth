@@ -1,3 +1,13 @@
+#our-beginning{
+  @mixin atMedium{
+    height: 35rem;
+  }
+
+  @mixin atLarge{
+    height: 56rem;
+  }
+}
+
 .our-beginning {
   position: relative;
   background-color: #dce7fb;
@@ -38,6 +48,10 @@
     @mixin atSmall{
       width: 50vw;
     }
+
+    @mixin atMedium{
+      width: 60vw;
+    }
   }
 
   &__img-wrapper img{
@@ -60,7 +74,7 @@
     width: 95%;
 
     @mixin atMedium{
-      width: 70%;
+      width: 40%;
       float: right;
 
     }
@@ -97,7 +111,7 @@
 
 
     @mixin atSmall {
-      width: 45%;
+      width: 40%;
       float: right;
       padding-top: 12rem;
       text-align: left;
@@ -110,11 +124,11 @@
     }
 
     @mixin atMedium{
-      width: 65%;
+      width: 100%;
       float: right;
-      padding-top: 10rem;
+      padding-top: 6rem;
       text-align: left;
-      padding-right: 12%;
+      padding: 10%;
       font-weight: 300;
       color: rgba(0, 0, 0, 0.3);
       font-family: sans-serif;

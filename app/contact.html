@@ -10,15 +10,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+  <link rel="icon"
+        type="image/x-icon"
+        href="assets\images\favicon\favicon_96x96_DCq_icon.ico">
 </head>
 <body>
 <div class="menu-overlay display-none">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="sidenav__item"><a href="#">Clients</a></div>
-    <div class="sidenav__item"><a href="#">About Us</a></div>
-    <div class="sidenav__item"><a href="#">Testimonials</a></div>
-    <div class="sidenav__item"><a href="#">Services</a></div>
+    <div class="sidenav__item"><a href="contact.html">Contact Us</a></div>
+    <div class="sidenav__item"><a href="index.html#our-beginning">About Us</a></div>
+    <div class="sidenav__item"><a href="index.html#testimonials">Testimonials</a></div>
+    <div class="sidenav__item"><a href="index.html#services">Services</a></div>
     <img id="navLogo" alt="latus logo" src="assets/images/logos/latus-mainblue.png">
   </div>
 </div>
@@ -45,12 +49,15 @@
 
       <div class="contact__img-one">
         <div id="contact__form-container" class="contact__content-container" class="display-none">
-            <form class="contact__form" action="/action_page.php">
+            <form class="contact__form" method="post" action="email_form.php">
               <label for="fname">First Name</label>
               <input type="text" class="contact__input-field" name="firstname" placeholder="Your name..">
               <br>
               <label for="lname">Last Name</label>
               <input type="text" class="contact__input-field" name="lastname" placeholder="Your last name..">
+              <br>
+              <label for="lname">Email Address</label>
+              <input type="text" class="contact__input-field" name="email" placeholder="Your email address..">
               <br>
               <label for="subject">Subject</label>
               <textarea class="contact__input-field" name="subject" placeholder="Write something.." style="height:200px"></textarea>

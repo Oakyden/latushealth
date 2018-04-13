@@ -1,9 +1,9 @@
 #contacts{
 
-  height: 100vh;
+  height: 50rem;
 
 
-@mixin atSmall{
+@mixin atLarge{
 
   height: 140vh;
   }
@@ -19,7 +19,7 @@
       margin-top: 20%;
       margin-left: 5%;
 
-    @mixin atSmall {
+    @mixin atLarge {
     font-size: 3rem;
     color:rgb(34, 129, 255,1);
     margin-top: 7%;
@@ -34,7 +34,7 @@
       height: 120vh;
       position: relative;
 
-      @mixin atSmall{
+      @mixin atLarge{
       width: 80%;
       height: 70vh;
       }
@@ -48,7 +48,7 @@
       background-color: rgba(0, 18, 106, 0.77);
       color: #fff;
 
-      @mixin atSmall{
+      @mixin atLarge{
         height: 100%;
       }
     }
@@ -64,6 +64,7 @@
       line-height: 4;
       font-size: 2rem;
       padding-bottom: 10%;
+      padding-top: 5%;
     }
 
     &__social-content{
@@ -100,7 +101,7 @@
 
     &__input-field{
       width: 100%;
-      margin-bottom: 5%;
+      margin-bottom: 2%;
       border-radius: 5px;
       padding: 2%;
     }
@@ -110,7 +111,8 @@
       background: white;
       border: none;
       border-radius: 5px;
-      width: 100%
+      width: 100%;
+      padding: 1%;
     }
 
 /*  @media (min-width: 530px) {
@@ -140,7 +142,7 @@
 
     }
 
-  @media (min-width: 530px) {
+  @media (min-width: 1200px) {
 
   &__container p {
         font-size: 2.2rem
@@ -151,9 +153,9 @@
   &__links{
     color: #fff;
     font-size: 2rem;
-    padding-top: 10%;
 
-    @mixin atSmall{
+
+    @mixin atLarge{
       text-align: right;
         font-size: 3rem;
     }
@@ -179,12 +181,12 @@
       height: 22em;
   }
 
-  @media (min-width: 530px) {
+  @media (min-width: 1200px) {
 
   &__img-one{
       width: 55%;
       float: left;
-      height: 90%;
+      height: 100%;
       margin-top: 5%;
       position: absolute;
   }
@@ -199,7 +201,7 @@
     margin: 0 auto;
     padding: 2%;
 
-    @mixin atSmall{
+    @mixin atLarge{
       width: 60%;
       background-color: rgba(34, 129, 255, 0.8);
       position: absolute;
