@@ -1,7 +1,7 @@
-var titles = ["Latus Health","Groupe Atlantic","Pepperells Solicitors", "MKM"];
+var titles = ["Latus Health","Groupe Atlantic","Pepperells", "MKM"];
 
 var descriptions = [
-"Helping you improve the health of every employee",
+"Occupational Health",
 "Ergonomic Assessment, Manual Handling, Safety Induction Video & Office Wellbeing",
 "Employee Resilience & Wellbeing",
 "Director performance, Health Checks and group exercise sessions"];

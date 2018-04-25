@@ -29,13 +29,13 @@
     }
 
     @mixin atMedium{
-      height: 35vh;
+      height: 50vh;
     }
 
     @mixin atLarge{
-    height: 45rem;
+    height: 40rem;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 5%;
     }
   }
 
@@ -90,7 +90,15 @@
     position: absolute;
     padding-top: 5%;
 
-    @mixin atSmall {
+    @mixin atMedium{
+      font-size: 2rem;
+        text-align: right;
+        position: absolute;
+        right: 10%;
+        padding-top: 0%;
+    }
+
+    @mixin atLarge {
       font-size: 2.5rem;
         text-align: right;
         position: absolute;
@@ -126,9 +134,8 @@
     @mixin atMedium{
       width: 100%;
       float: right;
-      padding-top: 6rem;
       text-align: left;
-      padding: 10%;
+      padding: 15% 10%;
       font-weight: 300;
       color: rgba(0, 0, 0, 0.3);
       font-family: sans-serif;
@@ -136,7 +143,7 @@
     }
 
     @mixin atLarge{
-      padding-top: 16rem;
+      padding-top: 10rem;
     }
 
 

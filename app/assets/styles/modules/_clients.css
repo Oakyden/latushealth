@@ -6,7 +6,7 @@
   margin: 0 auto;
 
   @mixin atSmall {
-      grid-template-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto;
   }
 }
 .grid-item {
@@ -22,9 +22,9 @@ img.grayscale {
   opacity: 0.6;
 
   @mixin atSmall {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-    opacity: 0.6;
+    filter: grayscale(70%);
+    -webkit-filter: grayscale(70%); /* Chrome 19+ & Safari 6+ */
+    opacity: 0.8;
   }
 }
 
@@ -59,7 +59,11 @@ opacity: 1;
 
     color: $mainBlue;
     font-weight: 600;
+    font-size: 1.5rem;
+
+    @mixin atLarge{
     font-size: 2.5rem;
+    }
   }
 
 

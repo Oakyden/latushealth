@@ -17,6 +17,13 @@ div#captioned-gallery {
   margin-top: 2rem;
 
   @mixin atLarge{
+    width: 70%;
+    overflow: hidden;
+    margin-top: 5rem;
+    display: inline-block;
+  }
+
+  @mixin atHuge{
     width: 60%;
     overflow: hidden;
     margin-top: 5rem;

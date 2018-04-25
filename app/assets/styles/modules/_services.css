@@ -1,237 +1,111 @@
-#services{
+.services{
+
+  &__wrapper{
+  display: grid;
+grid-gap: 5rem;
+grid-template-columns: repeat( auto-fit, minmax(18rem, 1fr) );
+grid-template-rows: repeat( auto-fit, minmax(18rem, 1fr) );
+background-color: #fff;
+width: 80%;
+justify-content: center;
+margin: 0 auto;
+font-family: sans-serif;
+margin-top: 5rem;
 
 
+@mixin atMedium{
+  grid-template-columns: repeat( auto-fit, minmax(15rem, 1fr) );
+  grid-template-rows: repeat( auto-fit, minmax(15rem, 1fr) );
+  width: 90%;
 }
 
-.services {
+@mixin atLarge{
+  margin-top: 0rem;
+  grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr) );
+  grid-template-rows: repeat( auto-fit, minmax(min-content, 1fr) );
+}
+
+@mixin atHuge{
+  margin-top: 0rem;
+  grid-template-columns: repeat( auto-fit, minmax(30rem, 1fr) );
+  grid-template-rows: repeat( auto-fit, minmax(10rem, 1fr) );
+}
+  }
+
+
+  &__box{
+color: #000;
+height: 100%;
+background-size: cover;
+position: relative;
+text-align: center;
+
+& img{
+  width: 3rem;
+}
+
+&-translucent{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+&-translucent:hover{
+  background-color: rgba(4, 29, 85, 0.7);;
+-webkit-transition: background-color 100ms linear;
+-ms-transition: background-color 100ms linear;
+transition: background-color 100ms linear;
+}
+
+
+
+&-content{
+  z-index: 1;
   position: relative;
-  background-color: #dce7fb;
+}
 
-  &__inner {
-    position: relative;
-    background-color: $innerBackground;
-    margin-top: 40%;
-    height: 600px;
-    margin: 0 auto;
-    height: 200px;
+&-surv {
+  background-image: url("../../assets/images/services/hs-background.jpg");
 
-    @mixin atSmall{
-    height: 40vh;
-    width: 100%;
-    }
   }
+&-bio {
+  background-image: url("../../assets/images/services/biological-background.jpg");
 
-  &__image {
-    display: block;
+
   }
+&-drug {
+  background-image: url("../../assets/images/services/drug-background.jpg");
 
-
-  &__subtitle {
-    font-weight: 700;
-    color: $mainBlue;
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 2rem 0rem 0rem 2rem;
-    z-index: 3;
-
-
-
-    @mixin atSmall {
-      font-size: 2rem;
-      padding-right: 5%;
-      padding-left: 5%;
-    }
   }
+&-abs {
+  background-image: url("../../assets/images/services/absence-background.jpg");
 
-
-  &__service-heading{
-    color: $mainBlue;
   }
+&-med{
+  background-image: url("../../assets/images/services/medical-background.jpg");
+
+}
+&-imm{
+  background-image: url("../../assets/images/services/imm-background.jpg");
+}
+&-man{
+  background-image: url("../../assets/images/services/mh-background.jpg");
+
+}
+&-well{
+  background-image: url("../../assets/images/services/wellbeing-background.jpg");
+
+}
+&-health{
+  background-image: url("../../assets/images/services/hs-background.jpg");
 
 }
 
 
-  /*start timeline*/
-  @-webkit-keyframes Gradient {
-  	0% {
-  		background-position: 0% 50%
-  	}
-  	50% {
-  		background-position: 100% 50%
-  	}
-  	100% {
-  		background-position: 0% 50%
-  	}
-  }
 
-  @-moz-keyframes Gradient {
-  	0% {
-  		background-position: 0% 50%
-  	}
-  	50% {
-  		background-position: 100% 50%
-  	}
-  	100% {
-  		background-position: 0% 50%
-  	}
-  }
+}
 
-  @keyframes Gradient {
-  	0% {
-  		background-position: 0% 50%
-  	}
-  	50% {
-  		background-position: 100% 50%
-  	}
-  	100% {
-  		background-position: 0% 50%
-  	}
-  }
-
-  .timeline ul {
-    background: linear-gradient(-45deg, $innerBackground, $mainBlue, $innerBackground);
-background-size: 200% 200%;
--webkit-animation: Gradient 15s ease infinite;
--moz-animation: Gradient 15s ease infinite;
-animation: Gradient 15s ease infinite;
-    padding: 5rem 0;
-  }
-
-  .timeline ul li {
-    list-style-type: none;
-    position: relative;
-    width: 6px;
-    margin: 0 auto;
-    padding-top: 50px;
-    background: #fff;
-  }
-
-  .timeline ul li::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: inherit;
-  }
-
-  .timeline ul li div {
-    position: relative;
-    bottom: 0;
-    width: 400px;
-    padding: 15px;
-    background: #fff;
-    border-radius: 10px;
-  }
-
-  .timeline ul li div img{
-    margin: -20% 0% 0% 60%;
-    max-width: 30%;
-    background-color: #fff;
-    border-radius: 50%;
-  }
-
-  .timeline ul li div::before {
-    content: '';
-    position: absolute;
-    bottom: 7px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-
-  .timeline ul li:nth-child(odd) div {
-    left: 45px;
-  }
-
-  .timeline ul li:nth-child(odd) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent $mainBlue transparent transparent;
-  }
-
-  .timeline ul li:nth-child(even) div {
-    left: -439px;
-  }
-
-  .timeline ul li:nth-child(even) div::before {
-    right: -15px;
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent $mainBlue;
-  }
-
-  time {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-
-
-  /* EFFECTS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-  .timeline ul li::after {
-    transition: background .5s ease-in-out;
-  }
-
-  .timeline ul li.in-view::after {
-    background: $mainBlue;
-  }
-
-  .timeline ul li div {
-    visibility: hidden;
-    opacity: 0;
-    transition: all .5s ease-in-out;
-    font-family: sans-serif;
-    font-size: 0.9rem;
-  }
-
-  .timeline ul li:nth-child(odd) div {
-    transform: translate3d(200px, 0, 0);
-  }
-
-  .timeline ul li:nth-child(even) div {
-    transform: translate3d(-200px, 0, 0);
-  }
-
-  .timeline ul li.in-view div {
-    transform: none;
-    visibility: visible;
-    opacity: 1;
-  }
-
-
-  /* GENERAL MEDIA QUERIES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-  @media screen and (max-width: 900px) {
-    .timeline ul li div {
-      width: 250px;
-    }
-    .timeline ul li:nth-child(even) div {
-      left: -289px;
-      /*250+45-6*/
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .timeline ul li {
-      margin-left: 20px;
-    }
-    .timeline ul li div {
-      width: calc(100vw - 91px);
-    }
-    .timeline ul li:nth-child(even) div {
-      left: 45px;
-    }
-    .timeline ul li:nth-child(even) div::before {
-      left: -15px;
-      border-width: 8px 16px 8px 0;
-      border-color: transparent $mainBlue transparent transparent;
-    }
-  }
-  /*end timeline*/
+}
