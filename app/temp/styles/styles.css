@@ -1866,7 +1866,7 @@ figcaption {
     right: 0;
     display: none;
     height: 18rem;
-    padding: 1rem;
+    padding-left: 1rem;
     background-color: rgba(0, 110, 255, 0.78);
     color: white;
     -webkit-clip-path: polygon(0% 0%, 6% 41%, 100% 100%, 100% 0%);
@@ -1879,6 +1879,10 @@ figcaption {
 .services__text-content{
       display: block
   }
+  }
+
+.services__text-content p{
+    padding: 1rem;
   }
 
 .services__overlay-one{
@@ -2131,6 +2135,11 @@ display: none;
     padding: 12px 25px 10px 25px;
     margin-top: 2rem
   }
+  }
+
+.case-study__button a{
+color: inherit;
+text-decoration: none;
   }
 
 .case-study__header{
