@@ -3,11 +3,11 @@
 
 
   @mixin atMedium{
-  
+
   }
 
   @mixin atLarge{
-  height: 120vh;
+
   }
 }
 
@@ -25,9 +25,16 @@
     }
 
     @mixin atLarge{
-      height: 60vh;
+      height: 40rem;
     }
 
+  }
+
+  &__container:nth-child(3){
+
+    @mixin atLarge{
+      height: 20rem;
+    }
   }
 
   &__container span{
@@ -93,6 +100,31 @@
     width: 60%;
     padding: 2%;
   }
+
+  &__img-three{
+    width: 100%;
+
+    @mixin atMedium{
+    width: 45%;
+    float: left;
+    margin-top: -10%;
+  }
+
+  @mixin atLarge{
+    margin-top: -20%;
+  }
+}
+
+  &__overlay-three{
+    width: 60%;
+    background-color: rgba(145, 148, 0, 0.75);
+    position: absolute;
+    height: 15rem;
+    margin-top: 5%;
+    margin-left: 15%;
+    padding: 2%;
+  }
+
 
 
 }

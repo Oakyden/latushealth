@@ -1,111 +1,106 @@
+
 .services{
+	overflow: hidden;
+  font-family: sans-serif;
+  font-weight: bold;
 
-  &__wrapper{
-  display: grid;
-grid-gap: 5rem;
-grid-template-columns: repeat( auto-fit, minmax(18rem, 1fr) );
-grid-template-rows: repeat( auto-fit, minmax(18rem, 1fr) );
-background-color: #fff;
-width: 80%;
-justify-content: center;
-margin: 0 auto;
-font-family: sans-serif;
-margin-top: 5rem;
+  &__text-content{
+    width: 40%;
+    position: absolute;
+    right: 0;
+    display: none;
+    height: 18rem;
+    padding: 1rem;
+    background-color: rgba(0, 110, 255, 0.78);
+    color: white;
+    -webkit-clip-path: polygon(0% 0%, 6% 41%, 100% 100%, 100% 0%);
+    clip-path: polygon(0% 0%, 6% 41%, 100% 100%, 100% 0%);
+    text-align: right;
 
-
-@mixin atMedium{
-  grid-template-columns: repeat( auto-fit, minmax(15rem, 1fr) );
-  grid-template-rows: repeat( auto-fit, minmax(15rem, 1fr) );
-  width: 90%;
-}
-
-@mixin atLarge{
-  margin-top: 0rem;
-  grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr) );
-  grid-template-rows: repeat( auto-fit, minmax(min-content, 1fr) );
-}
-
-@mixin atHuge{
-  margin-top: 0rem;
-  grid-template-columns: repeat( auto-fit, minmax(30rem, 1fr) );
-  grid-template-rows: repeat( auto-fit, minmax(10rem, 1fr) );
-}
+    @mixin atMedium{
+      display: block;
+    }
   }
 
-
-  &__box{
-color: #000;
-height: 100%;
-background-size: cover;
-position: relative;
-text-align: center;
-
-& img{
-  width: 3rem;
-}
-
-&-translucent{
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-}
-
-&-translucent:hover{
-  background-color: rgba(4, 29, 85, 0.7);;
--webkit-transition: background-color 100ms linear;
--ms-transition: background-color 100ms linear;
-transition: background-color 100ms linear;
-}
-
-
-
-&-content{
-  z-index: 1;
-  position: relative;
-}
-
-&-surv {
-  background-image: url("../../assets/images/services/hs-background.jpg");
-
+  &__overlay-one{
+    padding: 2%;
+    height: 100%;
   }
-&-bio {
-  background-image: url("../../assets/images/services/biological-background.jpg");
-
-
-  }
-&-drug {
-  background-image: url("../../assets/images/services/drug-background.jpg");
-
-  }
-&-abs {
-  background-image: url("../../assets/images/services/absence-background.jpg");
-
-  }
-&-med{
-  background-image: url("../../assets/images/services/medical-background.jpg");
-
-}
-&-imm{
-  background-image: url("../../assets/images/services/imm-background.jpg");
-}
-&-man{
-  background-image: url("../../assets/images/services/mh-background.jpg");
-
-}
-&-well{
-  background-image: url("../../assets/images/services/wellbeing-background.jpg");
-
-}
-&-health{
-  background-image: url("../../assets/images/services/hs-background.jpg");
-
 }
 
+		.rotate-slider{
+			margin: 8em auto;
+      margin-bottom: 0;
+			height: 360px;
+			/* overflow: hidden; */
+			width: 480px;
 
 
-}
+      @mixin atMedium{
+        margin: 12rem auto;
+      }
+		}
+		.rotate-slider ul.slides{
+			height: 100%;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+			position: relative;
+				top: 0;
+				left: 35%;
+			-ms-transform-origin: center center;
+			transform-origin: center center;
+			width: 100%;
 
-}
+      @mixin atLarge{
+        left: 0%;
+      }
+		}
+		.rotate-slider ul.slides.animate{
+			-webkit-transition: all 0.75s ease-in-out;
+			transition: all 0.75s ease-in-out;
+		}
+		.rotate-slider ul.slides li{
+			background-position: center;
+			background-size: contain;
+			display: block;
+			color: #fff;
+			list-style: none;
+			position: absolute;
+				top: 0;
+				left: 50%;
+			text-align: center;
+			-ms-transform-origin: bottom center;
+			transform-origin: bottom center;
+			width: 100%;
+      text-shadow:
+		}
+		.rotate-slider ul.slides li:nth-of-type(1){background: #3498db;}
+		.rotate-slider ul.slides li:nth-of-type(2){background:    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../../assets/images/services/biological-background.jpg"); background-size: cover;}
+		.rotate-slider ul.slides li:nth-of-type(3){background: #e74c3c;}
+		.rotate-slider ul.slides li:nth-of-type(4){background:    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../../assets/images/services/absence-background.jpg"); background-size: cover;}
+		.rotate-slider ul.slides li:nth-of-type(5){background: #f1c40f;}
+		.rotate-slider ul.slides li:nth-of-type(6){background:    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../../assets/images/services/imm-background.jpg"); background-size: cover;}
+    .rotate-slider ul.slides li:nth-of-type(7){background:    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../../assets/images/services/mh-background.jpg"); background-size: cover;}
+    .rotate-slider ul.slides li:nth-of-type(8){background: #aa0e0e; background-size: cover;}
+    .rotate-slider ul.slides li:nth-of-type(9){background:    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../../assets/images/services/hs-background.jpg"); background-size: cover;}
+		.rotate-slider ul.slides li .inner{
+			box-sizing: border-box;
+			height: 100%;
+			width: 20rem;
+		}
