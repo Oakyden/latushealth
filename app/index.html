@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117935013-1"></script>
   <script>
@@ -47,9 +49,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="menu-overlay display-none">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="sidenav__item"><a href="index.html">Homepage</a></div>
     <div class="sidenav__item"><a href="contact.html">Contact Us</a></div>
+    <div class="sidenav__item"><a href="#clients">Who we work with</a></div>
     <div class="sidenav__item"><a href="#our-beginning">About Us</a></div>
-    <div class="sidenav__item"><a href="#testimonials">Testimonials</a></div>
     <div class="sidenav__item"><a href="#services">Services</a></div>
     <img id="navLogo" alt="latus logo" src="assets/images/logos/latuslogo-blue.png">
   </div>
@@ -88,7 +91,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <div class="wrapper">
 
-    <div class="clients__text-content">
+    <div id="clients" class="clients__text-content">
         <h2 class="clients__subtitle">We're disrupting the corporate health industry with our innovative, agile approach to employee wellbeing</h2>
     </div>
 
@@ -130,7 +133,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <!-- Start of testimonials-->
 
-<div class="section-sub-heading-indent"></div>
+<!--<div class="section-sub-heading-indent"></div>
   <span class="section-sub-heading">&nbsp;Testimonials</span>
 
 
@@ -169,18 +172,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </div>
 
-    </div>
+  </div> ---->
 
     <!--Start alternative services-->
-    <span class="section-sub-heading indent-right">&nbsp;Services<div class="section-sub-heading-indent"></div>
-    </span>
+<div class="section-sub-heading-indent"></div>
+    <span class="section-sub-heading">&nbsp;Services</span>
 
   <div id="services" class="services page-section">
 
     <div class="services__text-content">
       <div class="services__overlay-one">
-        <p>Reduce sickness and absence. Prevent and remove health risks in the workplace. Screening and surveillance to detect early stages of ill health. Getting the right services in place can greatly improve the wellbeing of your employees and their working environment.</p>
+        <p>Reducing sickness and absence, Preventing and removing health risks in the workplace, Screening and surveillance to detect early stages of ill health. Getting the right services in place can greatly improve the wellbeing of your employees and their working environment.</p>
       </div>
+    </div>
+    <div class="services__side-image">
+      <img src="assets/images/services/office-workers.jpg" alt>
     </div>
 
     <div class="rotate-slider">
@@ -288,15 +294,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   			</clipPath>
   		</defs>
   	</svg>
+
   </div>
     <!--End services-->
 
 
   <!--Case study slier-->
 
-<div class="section-sub-heading-indent"></div>
-  <span class="section-sub-heading">&nbsp;Our Work</span><br>
 
+  <span id="our-work-span" class="section-sub-heading indent-right">&nbsp;Our Work <div class="section-sub-heading-indent"></div></span>
+
+  <div id="our-work" class="services page-section">
 
     <div id="captioned-gallery">
     	<div class="slider">
@@ -320,6 +328,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <span>We take pride in the work we do</span><br>
       <button class="our-work__button">View more work</button>
     </div>
+
+  </div>
 
 
   <footer>

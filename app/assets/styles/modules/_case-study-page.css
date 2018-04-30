@@ -44,7 +44,6 @@ text-decoration: none;
   }
 
   &__logo{
-    display: none;
     position: absolute;
     left: 50%;
     top: 30%;

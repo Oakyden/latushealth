@@ -28,6 +28,10 @@
     }
   }
 
+  &__map{
+    display: none;
+  }
+
 &__container{
 
       margin: 0 auto;
@@ -175,7 +179,6 @@
   &__img-one{
       z-index: 1;
       width: 80%;
-      background-image: url('../../assets/images/contactUs.jpg');
       background-size:cover;
       margin: 0 auto;
       height: 22em;
@@ -191,6 +194,7 @@
       position: absolute;
   }
     }
+
 
   &__overlay-one{
 

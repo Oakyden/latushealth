@@ -612,7 +612,7 @@ font-size: 1rem
 .sidenav__item{
   background-color: rgb(255,255,255);
   border-bottom: 2px solid lightgrey;
-  height: 18%;
+  height: 16%;
   padding-top: 10%;
   padding-bottom: 10%;
   -webkit-transition: 0.3s;
@@ -1077,14 +1077,14 @@ img.grayscale:hover {
 @media (min-width: 800px) {
 
 #our-beginning{
-    height: 35rem
+    height: 32rem
 }
   }
 
 @media (min-width: 1200px) {
 
 #our-beginning{
-    height: 56rem
+    height: 50rem
 }
   }
 
@@ -1124,7 +1124,7 @@ img.grayscale:hover {
 @media (min-width: 1200px) {
 
 .our-beginning__inner {
-    height: 40rem;
+    height: 30rem;
     width: 100%;
     margin-top: 5%
   }
@@ -1147,7 +1147,9 @@ img.grayscale:hover {
 @media (min-width: 800px) {
 
 .our-beginning__img-wrapper{
-      width: 60vw
+      width: 60vw;
+      max-height: 65%;
+      overflow: hidden
   }
   }
 
@@ -1414,6 +1416,14 @@ img.grayscale:hover {
 @media (min-width: 1200px) {
 
 .testimonial__container{
+      height: 30rem
+
+  }
+  }
+
+@media (min-width: 1900px) {
+
+.testimonial__container{
       height: 40rem
 
   }
@@ -1556,6 +1566,10 @@ img.grayscale:hover {
     margin-top: 7%;
     margin-left: 9%
   }
+  }
+
+.contact__map{
+    display: none;
   }
 
 .contact__container{
@@ -1711,7 +1725,6 @@ img.grayscale:hover {
 .contact__img-one{
       z-index: 1;
       width: 80%;
-      background-image: url('../../assets/images/contactUs.jpg');
       background-size:cover;
       margin: 0 auto;
       height: 22em;
@@ -1856,28 +1869,71 @@ figcaption {
 
 .services{
 	overflow: hidden;
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: bold;
+	margin-bottom: 3rem;
 }
 
+.services__side-image{
+		width: 25rem;
+		right: 0;
+		position: absolute;
+		-webkit-clip-path: polygon(0% 0%, 10% 90%, 100% 100%, 100% 0%);
+		clip-path: polygon(0% 0%, 10% 90%, 100% 100%, 100% 0%);
+		margin-top: 4rem;
+	}
+
+@media (min-width: 800px) {
+
+.services__side-image{
+			width: 45rem;
+			margin-top: 0rem;
+			max-height: 20rem
+	}
+  }
+
+@media (min-width: 1200px) {
+
+.services__side-image{
+			width: 45rem;
+			margin-top: 0rem;
+			max-height: 20rem
+	}
+  }
+
+@media (min-width: 1900px) {
+
+.services__side-image{
+			width: 60rem;
+			margin-top: 0rem;
+			max-height: none
+	}
+  }
+
 .services__text-content{
-    width: 40%;
+    width: 100%;
     position: absolute;
     right: 0;
-    display: none;
+    display: block;
     height: 18rem;
     padding-left: 1rem;
     background-color: rgba(0, 110, 255, 0.78);
     color: white;
-    -webkit-clip-path: polygon(0% 0%, 6% 41%, 100% 100%, 100% 0%);
-    clip-path: polygon(0% 0%, 6% 41%, 100% 100%, 100% 0%);
+    -webkit-clip-path: polygon(0% 0%, 6% 71%, 100% 100%, 100% 0%);
+    clip-path: polygon(0% 0%, 6% 71%, 100% 100%, 100% 0%);
     text-align: right;
+		margin-top: 3rem;
+		z-index: 1;
   }
 
 @media (min-width: 800px) {
 
 .services__text-content{
-      display: block
+      display: block;
+			width: 80%;
+			height: 25rem;
+			-webkit-clip-path: polygon(0% 0%, 6% 41%, 100% 100%, 100% 0%);
+			clip-path: polygon(0% 0%, 6% 41%, 100% 100%, 100% 0%)
   }
   }
 
@@ -1901,7 +1957,14 @@ figcaption {
 @media (min-width: 800px) {
 
 .rotate-slider{
-        margin: 12rem auto
+        margin: 8rem 0rem 5rem 15rem
+		}
+  }
+
+@media (min-width: 1200px) {
+
+.rotate-slider{
+				margin: 1rem 0rem 5rem 15rem
 		}
   }
 
@@ -1911,7 +1974,7 @@ figcaption {
 			overflow: hidden;
 			padding: 0;
 			position: relative;
-				top: 0;
+				top: 15rem;
 				left: 35%;
 			-webkit-transform-origin: center center;
 			        transform-origin: center center;
@@ -1943,8 +2006,22 @@ figcaption {
 			-webkit-transform-origin: bottom center;
 			        transform-origin: bottom center;
 			width: 100%;
-      text-shadow:
+      font-size: 0.8rem;
 		}
+
+@media (min-width: 800px) {
+
+.rotate-slider ul.slides li{
+				font-size: 0.9rem
+		}
+  }
+
+@media (min-width: 1200px) {
+
+.rotate-slider ul.slides li{
+				font-size: 1rem
+		}
+  }
 
 .rotate-slider ul.slides li:nth-of-type(1){background: #3498db;}
 
@@ -2061,6 +2138,24 @@ div#case-captioned-gallery {
   width: 100%;
  }
 
+#our-work-span{
+    margin: 1rem 0rem 0rem 3rem;
+}
+
+@media (min-width: 800px) {
+
+#our-work-span{
+    margin: 3rem 0rem 3rem 0rem
+}
+  }
+
+@media (min-width: 1200px) {
+
+#our-work-span{
+    margin: 7rem 0rem 3rem 0rem
+}
+  }
+
 .our-work__wrapper{
 
 text-align: center;
@@ -2173,7 +2268,6 @@ text-decoration: none;
   }
 
 .case-study__logo{
-    display: none;
     position: absolute;
     left: 50%;
     top: 30%;

@@ -1,3 +1,14 @@
+#our-work-span{
+    margin: 1rem 0rem 0rem 3rem;
+  @mixin atMedium{
+    margin: 3rem 0rem 3rem 0rem;
+  }
+
+  @mixin atLarge{
+    margin: 7rem 0rem 3rem 0rem;
+  }
+}
+
 .our-work{
 
 

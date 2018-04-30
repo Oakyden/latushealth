@@ -34,7 +34,7 @@ $(function(){
 
   /* Offset width and arc height */
   rotateSlider.slidesContainer.css('transform', 'translateX(-50%)');
-  rotateSlider.slidesContainer.css('top', '-'+ rotateSlider.upperArcHeight +'px');
+  /*rotateSlider.slidesContainer.css('top', '-'+ rotateSlider.upperArcHeight +'px');*/
 
   /* Generate path for slide clipping */
   var pathCoords = 'M 0 '+rotateSlider.fullArcHeight;
@@ -77,5 +77,5 @@ $(function(){
     }
     currentRotation = currentRotation - rotateSlider.slideAngle;
     rotateSlider.slidesContainer.css('transform', 'translateX(-50%) rotate('+currentRotation+'deg)');
-  }, 4000);
+  }, 8000);
 });

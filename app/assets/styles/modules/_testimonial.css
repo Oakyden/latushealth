@@ -25,6 +25,10 @@
     }
 
     @mixin atLarge{
+      height: 30rem;
+    }
+
+    @mixin atHuge{
       height: 40rem;
     }
 

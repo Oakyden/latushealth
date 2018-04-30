@@ -1,10 +1,10 @@
 #our-beginning{
   @mixin atMedium{
-    height: 35rem;
+    height: 32rem;
   }
 
   @mixin atLarge{
-    height: 56rem;
+    height: 50rem;
   }
 }
 
@@ -33,7 +33,7 @@
     }
 
     @mixin atLarge{
-    height: 40rem;
+    height: 30rem;
     width: 100%;
     margin-top: 5%;
     }
@@ -51,6 +51,8 @@
 
     @mixin atMedium{
       width: 60vw;
+      max-height: 65%;
+      overflow: hidden;
     }
   }
 
