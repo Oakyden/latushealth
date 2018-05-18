@@ -4,7 +4,7 @@
   }
 
   @mixin atLarge{
-    height: 50rem;
+    height: 42rem;
   }
 }
 
@@ -29,7 +29,7 @@
     }
 
     @mixin atMedium{
-      height: 50vh;
+      height: 65vh;
     }
 
     @mixin atLarge{

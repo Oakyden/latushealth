@@ -1,11 +1,11 @@
-#contacts{
+#contact{
 
   height: 50rem;
 
 
 @mixin atLarge{
 
-  height: 140vh;
+  height: 100vh;
   }
 }
 
@@ -26,10 +26,6 @@
     margin-left: 9%;
 
     }
-  }
-
-  &__map{
-    display: none;
   }
 
 &__container{
@@ -100,7 +96,7 @@
     }
 
     &__form{
-      padding: 5%;
+      padding: 3%;
     }
 
     &__input-field{

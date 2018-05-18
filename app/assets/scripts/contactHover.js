@@ -4,6 +4,8 @@ $("document").ready(function(){
             $("#contact__form-container").removeClass("display-none");
             $("#contact__phone-container").addClass("display-none");
             $("#contact__social-container").addClass("display-none");
+            $("#contact__map-container").addClass("display-none");
+            $("#contact__map").addClass("display-none");
             e.preventDefault();
         });
 
@@ -12,11 +14,14 @@ $("document").ready(function(){
             $("#contact__phone-container").removeClass("display-none");
             $("#contact__form-container").addClass("display-none");
             $("#contact__social-container").addClass("display-none");
+            $("#contact__map-container").addClass("display-none");
+            $("#contact__map").addClass("display-none");
             e.preventDefault();
         });
 
         $("#contact__find-us").click(function(e){
-            $('.contact__img-one').css("background-image", "url('/assets/images/dunston-house.png')");
+            $("#contact__map-container").removeClass("display-none");
+            $("#contact__map").removeClass("display-none");
             $("#contact__form-container").addClass("display-none");
             $("#contact__phone-container").addClass("display-none");
             $("#contact__social-container").addClass("display-none");
@@ -28,6 +33,9 @@ $("document").ready(function(){
             $("#contact__social-container").removeClass("display-none");
             $("#contact__form-container").addClass("display-none");
             $("#contact__phone-container").addClass("display-none");
+            $("#contact__map-container").addClass("display-none");
+            $("#contact__map").addClass("display-none");
+            
             e.preventDefault();
         });
 
