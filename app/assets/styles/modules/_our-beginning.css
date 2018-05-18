@@ -8,10 +8,41 @@
   }
 }
 
+
 .our-beginning {
   position: relative;
   background-color: #dce7fb;
   height: 60vh;
+
+  &__slideshow { 
+    position: absolute; 
+    width: 60%; 
+    z-index: 2;
+    height: 30rem;
+    margin-top: 7rem;
+    overflow: hidden;
+    
+}
+
+  &__slideshow img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%); 
+  }
+
+  &__testimonial{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+     background-color: rgba(0, 110, 255, 0.78);
+    	-webkit-clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 95% 30%);
+		clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 95% 30%);
+    z-index: 2;
+    padding: 5%;
+    color: #fff;
+  }
 
   &__inner {
     position: relative;
@@ -145,7 +176,7 @@
     }
 
     @mixin atLarge{
-      padding-top: 10rem;
+      padding-top: 6rem;
     }
 
 
