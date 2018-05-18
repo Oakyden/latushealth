@@ -2,6 +2,8 @@
   "name": "travel-site",
   "version": "1.0.0",
   "dependencies": {
+    "gulp-cli": "^2.0.1",
+    "gulp-install": "^1.1.0",
     "jquery": "^2.2.3",
     "normalize.css": "^4.1.1"
   },
