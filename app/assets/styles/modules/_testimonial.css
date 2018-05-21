@@ -32,6 +32,10 @@
       height: 40rem;
     }
 
+    & a{
+      text-decoration-color: white;
+    }
+
   }
 
   &__container:nth-child(3){
@@ -78,12 +82,14 @@
 
   &__overlay-one{
     width: 60%;
-    background-color: rgba(0, 55, 148, 0.75);
+    background-color: $mainBlue;
     position: absolute;
     height: 15rem;
     margin-top: -2%;
     margin-left: 15%;
     padding: 2%;
+    clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
+    opacity: 0.8;
   }
 
   &__img-two{
@@ -96,13 +102,15 @@
   }
 
   &__overlay-two{
-    background-color: rgba(255, 0, 0, 0.75);
+    background-color: $ronDearingPurple;
+    opacity: 0.8;
     position: absolute;
     height: 15rem;
     margin-top: -5%;
     margin-left: 25%;
     width: 60%;
     padding: 2%;
+    clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
   }
 
   &__img-three{
@@ -121,12 +129,14 @@
 
   &__overlay-three{
     width: 60%;
-    background-color: rgba(145, 148, 0, 0.75);
+    background-color: $mainBlue;
+    opacity: 0.8;
     position: absolute;
     height: 15rem;
     margin-top: 5%;
     margin-left: 15%;
     padding: 2%;
+    clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
   }
 
 

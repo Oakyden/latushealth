@@ -1,6 +1,7 @@
 #our-beginning{
+
   @mixin atMedium{
-    height: 32rem;
+    height: 40rem;
   }
 
   @mixin atLarge{
@@ -15,12 +16,26 @@
   height: 60vh;
 
   &__slideshow { 
-    position: absolute; 
-    width: 60%; 
+    position: absolute;  
     z-index: 2;
     height: 30rem;
-    margin-top: 7rem;
     overflow: hidden;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 8rem;
+    box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.3); 
+
+    @mixin atMedium{
+      width: 60%;
+      left: auto;
+      right: auto;
+      height: 20rem;
+    }
+
+    @mixin atLarge{
+      height: 25rem;
+    }
     
 }
 
@@ -33,15 +48,19 @@
   }
 
   &__testimonial{
-    height: 50%;
+    height: 90%;
     width: 100%;
     position: absolute;
      background-color: rgba(0, 110, 255, 0.78);
-    	-webkit-clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 95% 30%);
-		clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 95% 30%);
+    	-webkit-clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 98% 30%);
+		clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 98% 30%);
     z-index: 2;
-    padding: 5%;
+    padding: 30% 5%;
     color: #fff;
+
+    @mixin atMedium{
+      padding: 10% 5%;
+    }
   }
 
   &__inner {
@@ -49,9 +68,8 @@
     background-color: $innerBackground;
     margin-top: 40%;
     width: 85%;
-    height: 600px;
+    height: 64rem;
     margin: 0 auto;
-    height: 800px;
 
     @mixin atSmall{
     height: 50vh;
@@ -105,10 +123,14 @@
 
   &__text-content {
     width: 95%;
+    bottom: 5%;
+    position: absolute;
 
     @mixin atMedium{
       width: 40%;
       float: right;
+      bottom: auto;
+      position: relative;
 
     }
   }
@@ -168,7 +190,7 @@
       width: 100%;
       float: right;
       text-align: left;
-      padding: 15% 10%;
+      padding: 30% 10%;
       font-weight: 300;
       color: rgba(0, 0, 0, 0.3);
       font-family: sans-serif;
@@ -177,6 +199,7 @@
 
     @mixin atLarge{
       padding-top: 6rem;
+      padding: 15% 10%;
     }
 
 

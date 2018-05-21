@@ -38,11 +38,12 @@
 <div class="menu-overlay display-none">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="sidenav__item"><a href="index.html">Homepage</a></div>
-    <div class="sidenav__item"><a href="contact.html">Contact Us</a></div>
-    <div class="sidenav__item"><a href="#clients">Who we work with</a></div>
-    <div class="sidenav__item"><a href="#our-beginning">About Us</a></div>
-    <div class="sidenav__item"><a href="#services">Services</a></div>
+    <div class="sidenav__item"><a onclick="closeNav()" href="index.html">Homepage</a></div>
+    <div class="sidenav__item"><a onclick="closeNav()" href="contact.html">Contact Us</a></div>
+    <div class="sidenav__item"><a onclick="closeNav()" href="#clients">Who we work with</a></div>
+    <div class="sidenav__item"><a onclick="closeNav()" href="#our-beginning">About Us</a></div>
+    <div class="sidenav__item"><a onclick="closeNav()" href="#services">Services</a></div>
+    <div class="sidenav__item"><a onclick="closeNav()" href="case-studies.html">Case Studies</a></div>
     <img id="navLogo" alt="latus logo" src="assets/images/logos/latuslogo-blue.png">
   </div>
 
@@ -102,21 +103,21 @@
           <div>
             <div class="our-beginning__testimonial">
               <h2>MKM</h2>
-              <p>Given the nature of work that many of our staff do, it is essential that we have a comprehensive Occupational Health package. Latus Health have ensured that all our needs are covered and more.</p>
+              <p>"Given the nature of work that many of our staff do, it is essential that we have a comprehensive Occupational Health package. Latus Health have ensured that all our needs are covered and more."</p>
             </div>
             <img src="assets/images/mkm-staff.jpg">
           </div>
           <div>
             <div class="our-beginning__testimonial">
-                <h2>MKM</h2>
-                <p>Given the nature of work that many of our staff do, it is essential that we have a comprehensive Occupational Health package. Latus Health have ensured that all our needs are covered and more.</p>
+                <h2>Ron Dearing</h2>
+                <p>"Given the nature of work that many of our staff do, it is essential that we have a comprehensive Occupational Health package. Latus Health have ensured that all our needs are covered and more."</p>
             </div>
             <img src="assets/images/ron-dearing-3.jpg">
           </div>
           <div>
               <div class="our-beginning__testimonial">
-                  <h2>MKM</h2>
-                  <p>Given the nature of work that many of our staff do, it is essential that we have a comprehensive Occupational Health package. Latus Health have ensured that all our needs are covered and more.</p>
+                  <h2>Trans Waste</h2>
+                  <p>"Given the nature of work that many of our staff do, it is essential that we have a comprehensive Occupational Health package. Latus Health have ensured that all our needs are covered and more."</p>
               </div>
               <img src="assets/images/transwaste-slide-1.jpg">
           </div>
@@ -317,7 +318,7 @@
     	<div class="slider">
     		<div class="slider-figure">
     			<img src="assets/images/groupe-atlantic-recrute.jpg" alt>
-    			<figcaption><a style="color: white;" href="groupe-case-study.html">Groupe Atlantic / Ideal</a></figcaption>
+    			<figcaption><a style="color: white;" href="groupe-case-study.html">Groupe Atlantic</a></figcaption>
     		</div>
     		<div class="slider-figure">
     			<img src="assets/images/transwaste-slide-2.jpg" alt>
@@ -333,7 +334,7 @@
     <div class="our-work__wrapper">
       <h2>Client Case Studies</h2>
       <span>We take pride in the work we do</span><br>
-      <button class="our-work__button">View more work</button>
+      <button onclick="location.href='case-studies.html'" class="our-work__button" type="button">View more work</button>
     </div>
 
   </div>

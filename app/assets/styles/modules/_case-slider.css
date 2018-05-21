@@ -25,9 +25,7 @@
 }
 
 div#case-captioned-gallery {
-
   overflow: hidden;
-  margin-top: 2rem;
 
 }
 .case-slider {
@@ -67,7 +65,8 @@ div#case-captioned-gallery {
 figcaption {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 102, 255, 0.5);
+  background: $mainBlue;
+  opacity: 0.8;
   color: #fff;
   width: 100%;
   font-size: 2rem; padding: .6rem;

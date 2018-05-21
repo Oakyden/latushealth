@@ -45,7 +45,7 @@
       /*position: absolute;*/
       width: 100%;
       background: white;
-      background-color: rgba(0, 18, 106, 0.77);
+      background-color: rgba(28, 50, 116, 0.8);
       color: #fff;
 
       @mixin atLarge{
@@ -62,7 +62,7 @@
       display: block;
       text-align: center;
       line-height: 4;
-      font-size: 2rem;
+      font-size: 1.8rem;
       padding-bottom: 10%;
       padding-top: 5%;
     }

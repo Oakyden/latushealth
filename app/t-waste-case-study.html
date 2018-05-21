@@ -45,14 +45,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="menu-overlay display-none">
 <!--navMenu-->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="sidenav__item"><a href="contact.html">Contact Us</a></div>
-    <div class="sidenav__item"><a href="index.html#our-beginning">About Us</a></div>
-    <div class="sidenav__item"><a href="index.html#testimonials">Testimonials</a></div>
-    <div class="sidenav__item"><a href="index.html#services">Services</a></div>
-    <img id="navLogo" alt="latus logo" src="assets/images/logos/latuslogo-blue.png">
-  </div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="sidenav__item"><a onclick="closeNav()" href="index.html">Homepage</a></div>
+  <div class="sidenav__item"><a onclick="closeNav()" href="contact.html">Contact Us</a></div>
+  <div class="sidenav__item"><a onclick="closeNav()" href="#clients">Who we work with</a></div>
+  <div class="sidenav__item"><a onclick="closeNav()" href="#our-beginning">About Us</a></div>
+  <div class="sidenav__item"><a onclick="closeNav()" href="#services">Services</a></div>
+  <div class="sidenav__item"><a onclick="closeNav()" href="case-studies.html">Case Studies</a></div>
+  <img id="navLogo" alt="latus logo" src="assets/images/logos/latuslogo-blue.png">
+</div>
 
   </div>
 
@@ -94,7 +96,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="case-study__overview-description">
       <p>Transwaste process over 500,000 tonnes of waste every year. We created a health surveillance programme and comprehensive health & safety policies to ensure they were fully HSE compliant and that the processes were as efficient as possible.</p>
-      <button class="case-study__button border__tWaste color__tWaste"><a href="http://www.transwasteltd.com/">Visit Site</a></button>
+      <button  onclick="location.href='http://www.transwasteltd.com/'" class="case-study__button border__tWaste color__tWaste">Visit Site</button>
     </div>
 
   </div>
@@ -160,13 +162,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
   <div class="section-sub-heading-indent"></div>
-    <span class="section-sub-heading">&nbsp;Our Work</span><br>
+    <span class="section-sub-heading">&nbsp;Our Work</span><br><br><br>
 
   <div id="case-captioned-gallery">
     <div class="case-slider">
       <div class="case-slider-figure">
         <img src="assets/images/groupe-atlantic-recrute.jpg" alt>
-        <figcaption class="background-color__tWaste"><a style="color: white;" href="groupe-case-study.html">Groupe Atlantic / Ideal</a></figcaption>
+        <figcaption class="background-color__tWaste"><a style="color: white;" href="groupe-case-study.html">Groupe Atlantic</a></figcaption>
       </div>
       <div class="case-slider-figure">
         <img src="assets/images/transwaste-slide-2.jpg" alt>

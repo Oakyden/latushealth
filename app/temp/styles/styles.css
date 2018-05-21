@@ -425,6 +425,8 @@ body {
   color: #333;
   font-family: 'Rubik', sans-serif;
   overflow-x: hidden;
+  background: url("assets/images/polaroid.png");
+  background-repeat: repeat;
 }
 
 img {
@@ -577,7 +579,7 @@ img {
 .sidenav__item{
   background-color: rgb(255,255,255);
   border-bottom: 2px solid lightgrey;
-  height: 16%;
+  height: 14%;
   padding-top: 10%;
   padding-bottom: 10%;
   transition: 0.3s;
@@ -692,6 +694,25 @@ display: none;
   }
 }
 
+.large-hero__caseStudies{
+  -webkit-clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
+          clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
+}
+
+@media (min-width: 800px) {
+
+  .large-hero__caseStudies {
+    height: 45rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .large-hero__caseStudies {
+    height: 70vh;
+  }
+}
+
 .large-hero__translucent{
   background-color: rgba(34, 129, 255, 0.8);
   height: 100%;
@@ -708,7 +729,8 @@ display: none;
   width: 70%;
   margin-top: 12rem;
   font-size: 1.5rem;
-  text-shadow: 0px 0px 4px #fff;/* Safari, Chrome and Opera > 12.1 *//* Firefox < 16 *//* Internet Explorer *//* Opera < 12.1 */
+  text-shadow: 0px 0px 4px #fff;
+  text-align: center;/* Safari, Chrome and Opera > 12.1 *//* Firefox < 16 *//* Internet Explorer *//* Opera < 12.1 */
   animation: fadein 5s;
 }
 
@@ -898,8 +920,8 @@ img.grayscale {
 @media (min-width: 530px) {
 
   img.grayscale {
-    filter: grayscale(70%);
-    -webkit-filter: grayscale(70%);/* Chrome 19+ & Safari 6+ */
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);/* Chrome 19+ & Safari 6+ */
     opacity: 0.8;
   }
 }
@@ -946,7 +968,7 @@ opacity: 1;
 @media (min-width: 800px) {
 
   #our-beginning {
-    height: 32rem;
+    height: 40rem;
   }
 }
 
@@ -966,11 +988,31 @@ opacity: 1;
 
 .our-beginning__slideshow {
   position: absolute;
-  width: 60%;
   z-index: 2;
   height: 30rem;
-  margin-top: 7rem;
   overflow: hidden;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 8rem;
+  box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 800px) {
+
+  .our-beginning__slideshow {
+    width: 60%;
+    left: auto;
+    right: auto;
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .our-beginning__slideshow {
+    height: 25rem;
+  }
 }
 
 .our-beginning__slideshow img{
@@ -983,15 +1025,22 @@ opacity: 1;
 }
 
 .our-beginning__testimonial{
-  height: 50%;
+  height: 90%;
   width: 100%;
   position: absolute;
   background-color: rgba(0, 110, 255, 0.78);
-  -webkit-clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 95% 30%);
-  clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 95% 30%);
+  -webkit-clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 98% 30%);
+  clip-path: polygon(0% 15%, 0% 100%, 90% 80%, 98% 30%);
   z-index: 2;
-  padding: 5%;
+  padding: 30% 5%;
   color: #fff;
+}
+
+@media (min-width: 800px) {
+
+  .our-beginning__testimonial {
+    padding: 10% 5%;
+  }
 }
 
 .our-beginning__inner {
@@ -999,9 +1048,8 @@ opacity: 1;
   background-color: rgba(0, 102, 255, 0.1);
   margin-top: 40%;
   width: 85%;
-  height: 600px;
+  height: 64rem;
   margin: 0 auto;
-  height: 800px;
 }
 
 @media (min-width: 530px) {
@@ -1072,6 +1120,8 @@ opacity: 1;
 
 .our-beginning__text-content {
   width: 95%;
+  bottom: 5%;
+  position: absolute;
 }
 
 @media (min-width: 800px) {
@@ -1079,6 +1129,8 @@ opacity: 1;
   .our-beginning__text-content {
     width: 40%;
     float: right;
+    bottom: auto;
+    position: relative;
   }
 }
 
@@ -1147,7 +1199,7 @@ opacity: 1;
     width: 100%;
     float: right;
     text-align: left;
-    padding: 15% 10%;
+    padding: 30% 10%;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.3);
     font-family: sans-serif;
@@ -1159,6 +1211,7 @@ opacity: 1;
 
   .our-beginning__description {
     padding-top: 6rem;
+    padding: 15% 10%;
   }
 }
 
@@ -1305,6 +1358,11 @@ opacity: 1;
   }
 }
 
+.testimonial__container a{
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
 @media (min-width: 1200px) {
 
   .testimonial__container:nth-child(3) {
@@ -1349,12 +1407,15 @@ opacity: 1;
 
 .testimonial__overlay-one{
   width: 60%;
-  background-color: rgba(0, 55, 148, 0.75);
+  background-color: rgb(34, 129, 255);
   position: absolute;
   height: 15rem;
   margin-top: -2%;
   margin-left: 15%;
   padding: 2%;
+  -webkit-clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
+          clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
+  opacity: 0.8;
 }
 
 .testimonial__img-two{
@@ -1370,13 +1431,16 @@ opacity: 1;
 }
 
 .testimonial__overlay-two{
-  background-color: rgba(255, 0, 0, 0.75);
+  background-color: rgba(147, 43, 129, 0.7);
+  opacity: 0.8;
   position: absolute;
   height: 15rem;
   margin-top: -5%;
   margin-left: 25%;
   width: 60%;
   padding: 2%;
+  -webkit-clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
+          clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
 }
 
 .testimonial__img-three{
@@ -1401,12 +1465,15 @@ opacity: 1;
 
 .testimonial__overlay-three{
   width: 60%;
-  background-color: rgba(145, 148, 0, 0.75);
+  background-color: rgb(34, 129, 255);
+  opacity: 0.8;
   position: absolute;
   height: 15rem;
   margin-top: 5%;
   margin-left: 15%;
   padding: 2%;
+  -webkit-clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
+          clip-path: polygon(0% 0, 100% 0%, 100% 95%, 0 100%);
 }
 
 #contact{
@@ -1454,7 +1521,7 @@ opacity: 1;
 .contact__content-container{/*position: absolute;*/
   width: 100%;
   background: white;
-  background-color: rgba(0, 18, 106, 0.77);
+  background-color: rgba(28, 50, 116, 0.8);
   color: #fff;
 }
 
@@ -1471,7 +1538,7 @@ opacity: 1;
   display: block;
   text-align: center;
   line-height: 4;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-bottom: 10%;
   padding-top: 5%;
 }
@@ -1704,7 +1771,8 @@ div#captioned-gallery {
 figcaption {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 102, 255, 0.5);
+  background: rgb(34, 129, 255);
+  opacity: 0.8;
   color: #fff;
   width: 100%;
   font-size: 2rem; padding: .6rem;
@@ -1930,6 +1998,7 @@ div#case-captioned-gallery {
   width: 100%;
   overflow: hidden;
   display: inline-block;
+
 }
 
 .slider-case {
@@ -2097,10 +2166,15 @@ div#case-captioned-gallery {
   z-index: 2;
   position: relative;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-  padding: 4%;
+  padding: 10%;
 }
 
-@media (min-width: 800px) {}
+@media (min-width: 800px) {
+
+  .case-study__overview {
+    padding: 4%;
+  }
+}
 
 .case-study__inner{
   text-align: center;
@@ -2136,6 +2210,19 @@ div#case-captioned-gallery {
     font-size: 1rem;
     width: 60%;
   }
+}
+
+.case-study__overview-description ul{
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  column-gap: 5rem;
+  -moz-column-gap: 5rem;
+  -webkit-column-gap: 5rem;
+}
+
+.case-study__overview-description li{
+  margin: 0.5rem 0;
 }
 
 .case-study__overview-services{
@@ -2279,6 +2366,10 @@ div#case-captioned-gallery {
   color: rgba(147, 43, 129, 0.7) !important;
 }
 
+.color__caseStudies{
+  color: rgb(34, 129, 255) !important;
+}
+
 .background-color__groupe{
   background-color: rgba(188, 32, 32, 0.8) !important;
 }
@@ -2289,6 +2380,10 @@ div#case-captioned-gallery {
 
 .background-color__ronDearing{
   background-color: rgba(147, 43, 129, 0.7) !important;
+}
+
+.background-color__caseStudies{
+  color: rgb(34, 129, 255) !important;
 }
 
 .border__groupe{
@@ -2303,25 +2398,19 @@ div#case-captioned-gallery {
   border-color: rgba(147, 43, 129, 0.7) !important;
 }
 
+.border__caseStudies{
+  border-color: rgb(34, 129, 255) !important;
+}
+
 .logo-margin__groupe{
   margin-left: -18%;
   background-color: rgba(255,255,255, 0.5);
   border-radius: 20px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px) {}
 
-  .logo-margin__groupe {
-    margin-left: -18%;
-  }
-}
-
-@media (min-width: 1200px) {
-
-  .logo-margin__groupe {
-    margin-left: -320px;
-  }
-}
+@media (min-width: 1200px) {}
 
 .logo-margin__tWaste{
   margin-left: -70px;
@@ -2335,15 +2424,16 @@ div#case-captioned-gallery {
 }
 
 .logo-margin__ronDearing{
-  margin-left: -15%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255, 0.5);
+  border-radius: 20px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {}
 
-  .logo-margin__ronDearing {
-    margin-left: -6%;
-  }
-}
+@media (min-width: 1200px) {}
 
 @keyframes slidy {
 0% { left: 0%; }
@@ -2372,9 +2462,7 @@ div#case-captioned-gallery {
 }
 
 div#case-captioned-gallery {
-
   overflow: hidden;
-  margin-top: 2rem;
 
 }
 
@@ -2424,7 +2512,8 @@ div#case-captioned-gallery {
 figcaption {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 102, 255, 0.5);
+  background: rgb(34, 129, 255);
+  opacity: 0.8;
   color: #fff;
   width: 100%;
   font-size: 2rem; padding: .6rem;
